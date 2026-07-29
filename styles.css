@@ -403,19 +403,24 @@ body.hide-flags .claim-flag { outline: none; }
    ?preview=snapshot for layout review.
    ============================================================ */
 .snapshot-doc { display: none; }
-/* Preview mode mirrors print exactly: site chrome hidden, document only. */
-body.snapshot-preview { background: #e8ebee; }
-body.snapshot-preview > *:not(.snapshot-doc) { display: none !important; }
-body.snapshot-preview .snapshot-doc {
-  display: block;
-  max-width: 8.5in;
-  margin: 32px auto;
-  background: #fff;
-  box-shadow: 0 4px 24px rgba(36, 55, 70, 0.18);
-}
-body.snapshot-preview .snap-page {
-  padding: 0.55in;
-  border-bottom: 2px dashed var(--line);
+/* Preview mode mirrors print exactly: site chrome hidden, document only.
+   Scoped to screen — these framing styles (page shadow, gray backdrop, dashed
+   page dividers, simulated page padding) must never reach the printed PDF,
+   which supplies its own margins via @page. */
+@media screen {
+  body.snapshot-preview { background: #e8ebee; }
+  body.snapshot-preview > *:not(.snapshot-doc) { display: none !important; }
+  body.snapshot-preview .snapshot-doc {
+    display: block;
+    max-width: 8.5in;
+    margin: 32px auto;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(36, 55, 70, 0.18);
+  }
+  body.snapshot-preview .snap-page {
+    padding: 0.55in;
+    border-bottom: 2px dashed var(--line);
+  }
 }
 
 .snap-page { position: relative; }
@@ -659,6 +664,17 @@ body.snapshot-preview .snap-page {
 
   .snap-page { page-break-after: always; break-after: page; }
   .snap-page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* Tighter vertical rhythm in print than on screen — the Momentum worksheet
+     (12 fill-in lines + a table) overflowed to a 4th page at screen spacing,
+     which also desynced the "Page 2" running head. */
+  .snap-lines { margin: 9px 0 2px; }
+  .snap-lines .snap-line { margin-bottom: 9px; }
+  .snap-lines .snap-rule { height: 1em; }
+  .snap-fill td { height: 0.38in; }
+  .snap-h2 { margin: 16px 0 8px; }
+  .snap-ol li { margin-bottom: 5px; }
+  .snap-avoid { margin: 11px 0; }
 
   /* never split a worksheet row, table, or callout across a page */
   .snap-table, .snap-move, .snap-avoid, .snap-close, .snap-read { page-break-inside: avoid; break-inside: avoid; }
