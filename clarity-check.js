@@ -1,12 +1,33 @@
-// OM Builder Readiness Check — sandbox concept, client-side only, no backend.
-// Mirrors the "Assumption or Evidence?" mechanic from the internal Great Tech
-// Startup Game diagnostic, reframed around Builder 1.0 fit + funding-readiness
-// literacy. Every outcome ends in the same CTA: Book a Call — per Destin's
-// site-wide CTA rule, the point of the call is mutual clarity, not a filter.
+// OM Clarity Check — sandbox rebuild, 2026-07-29.
+// Reconciled with the existing (previously unimplemented) "Clarity Check" spec
+// in CTA-CONSISTENCY-PASS.md + ANALYTICS-CONSENT-GATING-SPEC.md: canonical CTA
+// copy, consent-gated analytics events, and a "Send my Snapshot" email capture.
+// Client-side only — the Snapshot capture is a demo (localStorage), not wired
+// to a real mailing list. A real deploy needs: a sitewide cookie-consent
+// banner (none exists yet in this replica) and a real Snapshot delivery
+// backend (Mailchimp or equivalent — see NEWSLETTER-MAILCHIMP-MEMORY-PACKET.md).
 
 (function () {
-  const app = document.getElementById("rc-app");
+  const app = document.getElementById("cc-app");
   if (!app) return;
+
+  // ---------------------------------------------------------------------
+  // Consent-gated analytics stub — mirrors ANALYTICS-CONSENT-GATING-SPEC.md.
+  // Fails safe: with no sitewide consent banner deployed yet, hasConsent()
+  // always returns false, so nothing fires. Wire a real banner to set
+  // localStorage 'om_consent' = 'granted' before this does anything live.
+  // Rule preserved from the spec: never pass raw free-text answers as event
+  // params — only the band.
+  // ---------------------------------------------------------------------
+  function hasConsent() {
+    try { return localStorage.getItem("om_consent") === "granted"; }
+    catch (e) { return false; }
+  }
+  function fireEvent(name, params) {
+    if (!hasConsent()) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: name }, params || {}));
+  }
 
   const PERSONAS = [
     {
@@ -101,6 +122,9 @@
     },
   ];
 
+  // Momentum/Ready band credibility copy draws on the launch-ready Door 2
+  // bridge language (PROGRAMS-DOOR-2-BRIDGE-COPY.md) for founders with
+  // ambiguous, quiet traction — reused here rather than improvised.
   const RESULTS = {
     foundation: {
       signal: "Building the Foundation",
@@ -113,12 +137,12 @@
     },
     momentum: {
       signal: "Gaining Real Momentum",
-      title: "You've Got Real Signal — Now Make It Undeniable.",
-      summary: "You're past the assumption stage. What's missing isn't more ideas — it's turning what you've already learned into something sharp enough to test.",
+      title: "You've Already Started. That's Not The Problem.",
+      summary: "Quiet traction is one of the most stressful places to be as a founder — you're not stalled enough to obviously quit, and not confirmed enough to confidently keep going. That's exactly what customer conversations are for: not to start over, but to find out what to keep, what to change, and what to stop. Nothing you've built is wasted. It's data — you just haven't asked it the right questions yet.",
       session: "Session 3 – 4 · Phase 01 – 02: UVP + MVP, Evidence to Strategy",
       sessionDetail: "Turn early signal into a sharp value promise and a lean MVP plan, then synthesize what your interviews actually said into a deliberate go-to-market strategy.",
       goal: "Set this goal before your first session: turn your <strong>strongest interview insight</strong> into one specific, testable value proposition.",
-      credibility: "This is the stage where people start taking you seriously — but not yet seriously enough to write a check, sign a contract, or bet their own credibility on yours. Builder is built to close exactly that gap, for you and for everyone who's deciding whether to stand behind you.",
+      credibility: "This is the stage where people start taking you seriously — but not yet seriously enough to write a check, sign a contract, or bet their own credibility on yours. Builder doesn't ask you to throw out what you've made — it asks you to test it against real customers before you spend more time or money assuming you already know the answer.",
     },
     ready: {
       signal: "Investor-Ready Signal",
@@ -131,8 +155,8 @@
     },
   };
 
-  const state = { step: 0, persona: null, answers: {} };
-  const TOTAL_STEPS = 1 + QUESTIONS.length; // persona + questions, result is separate
+  const state = { screen: "intro", step: 0, persona: null, answers: {}, snapshotSent: false };
+  const TOTAL_STEPS = 1 + QUESTIONS.length; // persona + questions
 
   function evidenceBand(score) {
     if (score <= 3) return "foundation";
@@ -155,14 +179,47 @@
     return "Working product";
   }
 
+  // Maps this quiz's evidence/build read onto contact.html's existing
+  // "I am a..." taxonomy (Founder w/ idea / early build / revenue), so a
+  // Snapshot submission can be reconciled against the same segment field
+  // used elsewhere in the funnel instead of inventing a third taxonomy.
+  function contactFormSegment() {
+    const b = state.answers.build;
+    const commitment = state.answers.commitment;
+    if (commitment && commitment.id === "concrete" && evidenceBand(score()) === "ready") {
+      return "Founder with revenue";
+    }
+    if (b && (b.id === "mockup" || b.id === "working")) return "Founder with an early build";
+    return "Founder with an idea";
+  }
+
   function render() {
-    if (state.step === 0) return renderPersona();
-    if (state.step <= QUESTIONS.length) return renderQuestion(state.step - 1);
+    if (state.screen === "intro") return renderIntro();
+    if (state.screen === "persona") return renderPersona();
+    if (state.screen === "questions") return renderQuestion(state.step);
     return renderResult();
   }
 
   function progressFill(stepIndex) {
     return Math.round((stepIndex / TOTAL_STEPS) * 100);
+  }
+
+  function renderIntro() {
+    fireEvent("clarity_start", {});
+    app.innerHTML = `
+      <div class="rc-card center">
+        <div class="rc-step-label">Before you start</div>
+        <div class="rc-prompt" style="margin-top:0.6rem;">Two minutes. Six questions. One honest read.</div>
+        <p class="rc-note" style="max-width:38rem; margin:0 auto 1.6rem;">No wrong answers — this isn't a test you can fail. It's the same handful of signals investors, partners, and customers already use to size up a startup, turned into something you can see for yourself.</p>
+        <div class="cta-row center">
+          <button type="button" class="btn btn-blue" id="cc-start">Start the Clarity Check &rarr;</button>
+        </div>
+      </div>
+    `;
+    document.getElementById("cc-start").addEventListener("click", () => {
+      state.screen = "persona";
+      render();
+    });
   }
 
   function renderPersona() {
@@ -193,7 +250,7 @@
       });
     });
     const next = document.getElementById("rc-next");
-    if (next) next.addEventListener("click", () => { state.step = 1; render(); });
+    if (next) next.addEventListener("click", () => { state.screen = "questions"; state.step = 0; render(); });
   }
 
   function renderQuestion(index) {
@@ -227,9 +284,63 @@
         render();
       });
     });
-    document.getElementById("rc-back").addEventListener("click", () => { state.step -= 1; render(); });
+    document.getElementById("rc-back").addEventListener("click", () => {
+      if (index === 0) { state.screen = "persona"; } else { state.step -= 1; }
+      render();
+    });
     const next = document.getElementById("rc-next");
-    if (next) next.addEventListener("click", () => { state.step += 1; render(); });
+    if (next) next.addEventListener("click", () => {
+      if (index === QUESTIONS.length - 1) {
+        fireEvent("clarity_complete", { band: evidenceBand(score()) });
+        state.screen = "result";
+      } else {
+        state.step += 1;
+      }
+      render();
+    });
+  }
+
+  function renderSnapshotBlock() {
+    if (state.snapshotSent) {
+      return `
+        <div class="rc-goal" style="margin-bottom:1.6rem;">
+          <strong>Snapshot sent (demo).</strong> In production this delivers your Clarity Snapshot by email and, if checked, adds you to the monthly Founder Brief. No real email was sent here — this build has no mailing-list backend yet.
+        </div>
+      `;
+    }
+    return `
+      <form id="cc-snapshot-form" class="rc-snapshot">
+        <div class="field">
+          <label for="cc-email">Email</label>
+          <input type="email" id="cc-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.92rem; color:var(--gray); margin-bottom:14px;">
+          <input type="checkbox" id="cc-brief-optin" style="margin-top:3px;">
+          <span>Also send me the monthly Founder Brief.</span>
+        </label>
+        <p class="rc-note" style="margin-bottom:1rem;">We'll only use this to send your Clarity Snapshot, plus the monthly Founder Brief if you check that box. Nothing else.</p>
+        <button type="submit" class="btn btn-navy">Send my Snapshot &rarr;</button>
+      </form>
+    `;
+  }
+
+  function wireSnapshotForm() {
+    const form = document.getElementById("cc-snapshot-form");
+    if (!form) return;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("cc-email").value;
+      const briefOptin = document.getElementById("cc-brief-optin").checked;
+      try {
+        localStorage.setItem("cc_snapshot_demo", JSON.stringify({
+          email, briefOptin, band: evidenceBand(score()), segment: contactFormSegment(),
+          sentAt: "demo-no-timestamp",
+        }));
+      } catch (err) { /* demo only, ignore storage failures */ }
+      fireEvent("clarity_email", { band: evidenceBand(score()) });
+      state.snapshotSent = true;
+      render();
+    });
   }
 
   function entityNote() {
@@ -272,10 +383,13 @@
 
         ${entityNote()}
 
-        <p class="rc-call-line">Whatever you picked above — a short call is how we both find out if Builder is the right fit, right now. No pressure, no pitch. Just clarity on both sides.</p>
+        <h3 style="margin-bottom:0.8rem;">Want to keep this?</h3>
+        ${renderSnapshotBlock()}
+
+        <p class="rc-call-line" style="margin-top:1.8rem;">Whatever you picked above — a short call is how we both find out if Builder is the right fit, right now. No pressure, no pitch. Just clarity on both sides.</p>
 
         <div class="cta-row">
-          <a class="btn btn-blue" href="contact.html">Book a Call</a>
+          <a class="btn btn-blue" href="contact.html" id="cc-book-cta">Book a 20-minute conversation &rarr;</a>
           <a class="btn btn-ghost-navy" href="builder-program.html">See the Full Builder Program</a>
         </div>
         <div class="rc-nav" style="margin-top:1.2rem;">
@@ -284,8 +398,11 @@
         </div>
       </div>
     `;
+    wireSnapshotForm();
+    const bookCta = document.getElementById("cc-book-cta");
+    if (bookCta) bookCta.addEventListener("click", () => fireEvent("clarity_to_booking", { band }));
     document.getElementById("rc-restart").addEventListener("click", () => {
-      state.step = 0; state.persona = null; state.answers = {};
+      state.screen = "intro"; state.step = 0; state.persona = null; state.answers = {}; state.snapshotSent = false;
       render();
     });
   }

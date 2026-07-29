@@ -378,6 +378,8 @@ body.hide-flags .claim-flag { outline: none; }
 .rc-goal strong { color: var(--navy); }
 .rc-credibility { font-size: 0.98rem; color: var(--ink); line-height: 1.6; margin-bottom: 2rem; }
 .rc-call-line { font-size: 0.95rem; color: var(--gray); margin-bottom: 1.2rem; }
+.rc-snapshot { background: var(--paper-dim); border-radius: var(--radius-card); padding: 22px 24px; margin-bottom: 1.6rem; }
+.rc-snapshot .field { margin-bottom: 14px; }
 @media (max-width: 700px) {
   .rc-card { padding: 30px 22px 26px; }
   .rc-persona-grid, .rc-signal-row { grid-template-columns: 1fr; }
