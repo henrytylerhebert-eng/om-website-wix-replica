@@ -122,35 +122,38 @@
     },
   ];
 
-  // Momentum/Ready band credibility copy draws on the launch-ready Door 2
-  // bridge language (PROGRAMS-DOOR-2-BRIDGE-COPY.md) for founders with
-  // ambiguous, quiet traction — reused here rather than improvised.
+  // Copy principle (per Tyler, 2026-07-29): the read should stand on its own
+  // as a useful insight that makes the founder's next decision easier — not
+  // "you need Builder because the quiz said so." Session pairing stays (it's
+  // genuinely useful), but is framed as guidance that already exists for this
+  // exact move, not a sales pitch. Momentum band draws on the launch-ready
+  // Door 2 bridge language (PROGRAMS-DOOR-2-BRIDGE-COPY.md).
   const RESULTS = {
     foundation: {
       signal: "Building the Foundation",
       title: "You're Building the Foundation — And That's Exactly Where Builder Starts.",
       summary: "Every founder starts here. The gap right now isn't your idea or your effort — it's that the evidence for it mostly lives in your head.",
+      move: "The single highest-leverage move from here: have <strong>5 real conversations</strong> with people who match your buyer — not friends, not family. That's what actually changes the read on this venture, fast.",
       session: "Session 1 – 2 · Phase 01: Discover & Design",
-      sessionDetail: "JTBD + Buying Center, then a Discovery Plan built to surface real evidence instead of polite encouragement.",
-      goal: "Set this goal before your first session: have <strong>5 real conversations</strong> with people who match your buyer — not friends, not family.",
-      credibility: "Right now, your biggest credibility gap isn't your product — it's proof that someone besides you has this problem. Builder gives you the reps and the language to go get that proof, so the next conversation you have — with an investor, a partner, a customer — you're not guessing anymore.",
+      sessionDetail: "JTBD + Buying Center, then a Discovery Plan built to run exactly that kind of conversation well — the kind that surfaces real evidence instead of polite encouragement.",
+      credibility: "Right now, the biggest credibility gap with anyone who might back this — an investor, a partner, a future hire — isn't your product. It's proof someone besides you has this problem. That's a fast thing to close, not a slow one, once you know how to ask.",
     },
     momentum: {
       signal: "Gaining Real Momentum",
       title: "You've Already Started. That's Not The Problem.",
       summary: "Quiet traction is one of the most stressful places to be as a founder — you're not stalled enough to obviously quit, and not confirmed enough to confidently keep going. That's exactly what customer conversations are for: not to start over, but to find out what to keep, what to change, and what to stop. Nothing you've built is wasted. It's data — you just haven't asked it the right questions yet.",
+      move: "The single highest-leverage move from here: turn your <strong>strongest interview insight</strong> into one specific, testable value proposition.",
       session: "Session 3 – 4 · Phase 01 – 02: UVP + MVP, Evidence to Strategy",
-      sessionDetail: "Turn early signal into a sharp value promise and a lean MVP plan, then synthesize what your interviews actually said into a deliberate go-to-market strategy.",
-      goal: "Set this goal before your first session: turn your <strong>strongest interview insight</strong> into one specific, testable value proposition.",
-      credibility: "This is the stage where people start taking you seriously — but not yet seriously enough to write a check, sign a contract, or bet their own credibility on yours. Builder doesn't ask you to throw out what you've made — it asks you to test it against real customers before you spend more time or money assuming you already know the answer.",
+      sessionDetail: "Turns early signal into a sharp value promise and a lean MVP plan, then synthesizes what your interviews actually said into a deliberate go-to-market strategy.",
+      credibility: "This is the stage where people start taking you seriously — but not yet seriously enough to write a check, sign a contract, or bet their own credibility on yours. The move from here isn't to throw out what you've made — it's testing it against real customers before spending more time or money assuming you already know the answer.",
     },
     ready: {
       signal: "Investor-Ready Signal",
       title: "You've Earned the Right to Move Fast.",
       summary: "The buyer, the workaround, and real commitment are all in place. What usually stands between here and a raise isn't more evidence — it's the room, and the story that gets you in it.",
+      move: "The single highest-leverage move from here: turn your <strong>strongest proof point</strong> into a pitch that survives real investor questions.",
       session: "Session 6 – 7 · Phase 03: Traction & Launch",
       sessionDetail: "Traction + Revenue to stress-test the model, then Pitch Craft to shape your evidence into a story that earns the room.",
-      goal: "Set this goal before your first session: turn your <strong>strongest proof point</strong> into a pitch that survives real investor questions.",
       credibility: "What opens doors from here isn't a bigger product — it's credibility that compounds: for funding, for partnerships, for the next hire who's trusting you with their own career. That's the part of “investor-ready” that's easy to miss.",
     },
   };
@@ -337,10 +340,30 @@
           sentAt: "demo-no-timestamp",
         }));
       } catch (err) { /* demo only, ignore storage failures */ }
-      fireEvent("clarity_email", { band: evidenceBand(score()) });
+      const band = evidenceBand(score());
+      fireEvent("clarity_email", { band });
+      // Newsletter opt-in gets its own canonical event name, separate from
+      // the Snapshot capture itself, per ANALYTICS-CONSENT-GATING-SPEC.md's
+      // Newsletter Tracking Rule.
+      if (briefOptin) fireEvent("brief_signup", { band });
       state.snapshotSent = true;
       render();
     });
+  }
+
+  // "Get the Brief" is a standalone CTA (per Tyler, 2026-07-29: interest call
+  // + newsletter are the two things we want a visitor to do) but reuses the
+  // same email field as the Snapshot capture rather than duplicating an
+  // input — it scrolls to the form, checks the newsletter box, and focuses
+  // the email field.
+  function focusBriefSignup() {
+    const optin = document.getElementById("cc-brief-optin");
+    const email = document.getElementById("cc-email");
+    if (optin) optin.checked = true;
+    if (email) {
+      email.scrollIntoView({ behavior: "smooth", block: "center" });
+      email.focus();
+    }
   }
 
   function entityNote() {
@@ -371,15 +394,15 @@
           </div>
         </div>
 
-        <div class="rc-next-move">
-          <span>Where you'd start in Builder</span>
-          <strong>${r.session}</strong>
-          <p style="color:var(--gray); margin-top:6px;">${r.sessionDetail}</p>
-        </div>
-
-        <div class="rc-goal">${r.goal}</div>
+        <div class="rc-goal">${r.move}</div>
 
         <p class="rc-credibility">${r.credibility}</p>
+
+        <div class="rc-next-move">
+          <span>Guidance already built for exactly this</span>
+          <strong><a href="builder-program.html" style="color:inherit;">${r.session}</a></strong>
+          <p style="color:var(--gray); margin-top:6px;">${r.sessionDetail}</p>
+        </div>
 
         ${entityNote()}
 
@@ -390,7 +413,7 @@
 
         <div class="cta-row">
           <a class="btn btn-blue" href="contact.html" id="cc-book-cta">Book a 20-minute conversation &rarr;</a>
-          <a class="btn btn-ghost-navy" href="builder-program.html">See the Full Builder Program</a>
+          <button type="button" class="btn btn-ghost-navy" id="cc-brief-cta">Get the Brief &rarr;</button>
         </div>
         <div class="rc-nav" style="margin-top:1.2rem;">
           <button type="button" class="btn btn-ghost-navy" id="rc-restart">Retake the check</button>
@@ -401,6 +424,8 @@
     wireSnapshotForm();
     const bookCta = document.getElementById("cc-book-cta");
     if (bookCta) bookCta.addEventListener("click", () => fireEvent("clarity_to_booking", { band }));
+    const briefCta = document.getElementById("cc-brief-cta");
+    if (briefCta) briefCta.addEventListener("click", focusBriefSignup);
     document.getElementById("rc-restart").addEventListener("click", () => {
       state.screen = "intro"; state.step = 0; state.persona = null; state.answers = {}; state.snapshotSent = false;
       render();
