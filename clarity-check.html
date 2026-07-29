@@ -85,6 +85,12 @@
   </div>
 </footer>
 
+<!-- Printable Clarity Snapshot. Hidden on screen, shown only in print (or with
+     ?preview=snapshot for layout review). Populated by clarity-check.js from
+     the visitor's own answers. Must be a DIRECT child of <body> — the print
+     stylesheet hides every other top-level element. -->
+<div class="snapshot-doc" id="snapshot-doc" aria-hidden="true"></div>
+
 <script src="main.js"></script>
 <script src="clarity-check.js"></script>
 </body>

@@ -376,6 +376,16 @@ body.hide-flags .claim-flag { outline: none; }
 .rc-next-move span { display: block; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
 .rc-goal { background: var(--paper-dim); border-radius: var(--radius); padding: 18px 20px; font-size: 0.95rem; margin-bottom: 1.6rem; }
 .rc-goal strong { color: var(--navy); }
+.rc-goal-k {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.66rem;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
 .rc-credibility { font-size: 0.98rem; color: var(--ink); line-height: 1.6; margin-bottom: 2rem; }
 .rc-call-line { font-size: 0.95rem; color: var(--gray); margin-bottom: 1.2rem; }
 .rc-snapshot { background: var(--paper-dim); border-radius: var(--radius-card); padding: 22px 24px; margin-bottom: 1.6rem; }
@@ -383,6 +393,279 @@ body.hide-flags .claim-flag { outline: none; }
 @media (max-width: 700px) {
   .rc-card { padding: 30px 22px 26px; }
   .rc-persona-grid, .rc-signal-row { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   CLARITY SNAPSHOT — printable take-home document
+   Rendered to PDF via the browser's own print-to-PDF (no external
+   library, keeps the site fully static and self-contained).
+   Hidden on screen; visible in print, or on screen via
+   ?preview=snapshot for layout review.
+   ============================================================ */
+.snapshot-doc { display: none; }
+/* Preview mode mirrors print exactly: site chrome hidden, document only. */
+body.snapshot-preview { background: #e8ebee; }
+body.snapshot-preview > *:not(.snapshot-doc) { display: none !important; }
+body.snapshot-preview .snapshot-doc {
+  display: block;
+  max-width: 8.5in;
+  margin: 32px auto;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(36, 55, 70, 0.18);
+}
+body.snapshot-preview .snap-page {
+  padding: 0.55in;
+  border-bottom: 2px dashed var(--line);
+}
+
+.snap-page { position: relative; }
+
+/* masthead — reversed logo requires a navy field (no dark-on-light logo asset exists) */
+.snap-masthead {
+  background: var(--navy);
+  color: #fff;
+  padding: 22px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+.snap-masthead img { height: 34px; width: auto; }
+.snap-masthead .snap-doctitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  color: #6fc6ea;
+  text-align: right;
+}
+
+/* running head on continuation pages */
+.snap-runhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  color: var(--navy);
+}
+.snap-runhead span:last-child { color: var(--gray); letter-spacing: 0.08em; }
+
+.snap-doc-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.snap-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  color: var(--blue);
+  margin: 22px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--line);
+}
+.snap-h2:first-of-type { margin-top: 0; }
+.snap-lead { font-size: 0.95rem; color: var(--ink); line-height: 1.55; margin-bottom: 12px; }
+.snap-doc p { font-size: 0.9rem; line-height: 1.55; color: var(--ink); }
+
+/* read summary band */
+.snap-read {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1.5px solid var(--navy);
+  margin-bottom: 18px;
+}
+.snap-read > div { padding: 14px 16px; }
+.snap-read > div + div { border-left: 1.5px solid var(--navy); }
+.snap-read .k {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.62rem;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+.snap-read .v {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+/* the one move — the most important thing on page 1 */
+.snap-move {
+  border-left: 5px solid var(--blue);
+  background: var(--paper-dim);
+  padding: 14px 18px;
+  margin: 16px 0;
+}
+.snap-move .snap-move-k {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.64rem;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+.snap-move p { font-size: 1rem; line-height: 1.5; }
+
+/* mirrored answers + signal tables */
+.snap-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+.snap-table th, .snap-table td {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.snap-table th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.64rem;
+  color: var(--navy);
+  background: var(--paper-dim);
+}
+.snap-table td.snap-q { width: 38%; color: var(--gray); }
+.snap-table td.snap-a { font-weight: 500; color: var(--navy); }
+
+/* signal state pills — text, not color-only (prints legibly in mono) */
+.snap-state {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 2px 7px;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.snap-state.is-yes { color: #0a7d4b; }
+.snap-state.is-part { color: #a8690a; }
+.snap-state.is-no { color: var(--gray); }
+
+/* worksheet lists */
+.snap-ol { margin: 0 0 12px 1.1rem; }
+.snap-ol li { font-size: 0.89rem; line-height: 1.5; margin-bottom: 7px; color: var(--ink); }
+.snap-avoid {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gray);
+  padding: 12px 16px 12px 14px;
+  margin: 14px 0;
+  background: #fbfbfc;
+}
+.snap-avoid .snap-avoid-k {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.64rem;
+  color: var(--navy);
+  margin-bottom: 7px;
+}
+.snap-avoid ul { margin: 0 0 0 1.05rem; }
+.snap-avoid li { font-size: 0.85rem; line-height: 1.5; margin-bottom: 5px; color: var(--gray); }
+.snap-note { font-size: 0.83rem; color: var(--gray); font-style: italic; margin: 10px 0; }
+
+/* labelled blank lines to fill in by hand */
+.snap-lines { margin: 12px 0 4px; }
+.snap-lines .snap-line { margin-bottom: 14px; }
+.snap-lines .snap-line-k {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.snap-lines .snap-rule { display: block; border-bottom: 1px solid var(--navy); height: 1.2em; }
+
+/* fill-in-by-hand rows */
+.snap-fill td { height: 0.46in; }
+.snap-blank {
+  border-bottom: 1px solid var(--navy);
+  display: inline-block;
+  min-width: 2.2in;
+  height: 1.05em;
+}
+
+/* close / next-step block */
+.snap-close { border: 1.5px solid var(--navy); padding: 16px 18px; margin-top: 18px; }
+.snap-close .snap-close-h {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.snap-contact { font-size: 0.88rem; line-height: 1.7; color: var(--ink); }
+.snap-contact strong { color: var(--navy); }
+
+.snap-foot {
+  margin-top: 20px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: 0.66rem;
+  color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+/* on-screen download affordance */
+.snap-dl-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+
+@media print {
+  /* Only the snapshot prints. Every other top-level element is suppressed,
+     so the site header/nav/footer/quiz never leak into the PDF. */
+  body > *:not(.snapshot-doc) { display: none !important; }
+  .snapshot-doc { display: block !important; }
+
+  @page { size: letter; margin: 0.55in; }
+
+  html, body {
+    background: #fff !important;
+    font-size: 12px;
+  }
+  /* keep brand fills instead of letting the browser strip them */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  .snap-page { page-break-after: always; break-after: page; }
+  .snap-page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* never split a worksheet row, table, or callout across a page */
+  .snap-table, .snap-move, .snap-avoid, .snap-close, .snap-read { page-break-inside: avoid; break-inside: avoid; }
+  .snap-table tr { page-break-inside: avoid; break-inside: avoid; }
+  .snap-h2 { page-break-after: avoid; break-after: avoid; }
+
+  a { text-decoration: none; color: var(--navy); }
 }
 
 /* ---------- responsive ---------- */
