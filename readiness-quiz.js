@@ -87,6 +87,18 @@
         { id: "working", label: "A working product or prototype", score: 2 },
       ],
     },
+    {
+      id: "entity",
+      prompt: "Last one — have you set up a business entity yet, like an LLC?",
+      note: "Totally optional, and it won't change your read above — this just helps OM get to know you and point you toward the right resources if and when you need them.",
+      options: [
+        { id: "not_yet", label: "Not yet — haven't looked into it", score: 0 },
+        { id: "considering", label: "Not yet — I'm looking into it", score: 0 },
+        { id: "llc", label: "Yes — an LLC", score: 0 },
+        { id: "other_entity", label: "Yes — a different entity (C-corp, partnership, etc.)", score: 0 },
+        { id: "skip", label: "Prefer not to say", score: 0 },
+      ],
+    },
   ];
 
   const RESULTS = {
@@ -220,6 +232,12 @@
     if (next) next.addEventListener("click", () => { state.step += 1; render(); });
   }
 
+  function entityNote() {
+    const entity = state.answers.entity;
+    if (!entity || (entity.id !== "not_yet" && entity.id !== "considering")) return "";
+    return `<p class="rc-note" style="margin-bottom:1.6rem;">No entity yet? That's normal at this stage — most founders form one during Builder, not before it. We'll flag the right resource for it when the time is right.</p>`;
+  }
+
   function renderResult() {
     const band = evidenceBand(score());
     const r = RESULTS[band];
@@ -251,6 +269,8 @@
         <div class="rc-goal">${r.goal}</div>
 
         <p class="rc-credibility">${r.credibility}</p>
+
+        ${entityNote()}
 
         <p class="rc-call-line">Whatever you picked above — a short call is how we both find out if Builder is the right fit, right now. No pressure, no pitch. Just clarity on both sides.</p>
 
