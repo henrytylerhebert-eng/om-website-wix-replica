@@ -1,0 +1,77 @@
+{
+  "run_id": "om-homepage-v2-audit-2026-09-09",
+  "date": "2026-09-09",
+  "mode": "audit_and_draft",
+  "input_artifacts": [
+    "clarity-check.html",
+    "index.html",
+    "main.js",
+    "styles.css",
+    "om-working-mock-site-v1.0",
+    "OM Website Skill Suite v1.2.0",
+    "PUBLIC-CLAIMS-REGISTRY.md",
+    "OM-WIX-SITE-PAGE-BY-PAGE-CONTENT-BRIEF-2026-09-09.md"
+  ],
+  "canon_version": "1.2.0",
+  "source_ids": [
+    "S-USER-STRATEGY",
+    "S-HERO-AUG",
+    "S-CTA-AUG",
+    "S-JULY-BRIEF",
+    "S-BRAND",
+    "S-PEERS-A",
+    "S-PEERS-B"
+  ],
+  "files_changed": [
+    "planning/v2/FOUR-FILE-AUDIT.md",
+    "planning/v2/homepage-v2-page.json",
+    "planning/v2/HOMEPAGE-V2-COPY-REVIEW.md",
+    "planning/v2/homepage-v2-qa.json",
+    "planning/v2/homepage-v2-release-qa.json",
+    "planning/v2/improvement-record-OM-V2-M1-001.json",
+    "planning/v2/run-receipt-2026-09-09.json"
+  ],
+  "candidate_files_preserved": [
+    "clarity-check.html",
+    "index.html",
+    "main.js",
+    "styles.css"
+  ],
+  "protected_content_changed": false,
+  "checks_run": [
+    "repository preflight",
+    "GitHub Pages source inspection",
+    "four-file diff audit",
+    "git diff --check",
+    "JavaScript syntax checks",
+    "local destination existence check",
+    "duplicate ID check",
+    "canon and claims review",
+    "homepage draft record QA",
+    "homepage release-gate QA"
+  ],
+  "checks_not_run": [
+    "rendered desktop review",
+    "rendered mobile review",
+    "assistive-technology review",
+    "live booking completion",
+    "analytics verification",
+    "participant research"
+  ],
+  "material_learning": "The candidate improved founder recognition and accessibility, but it reintroduced an older CTA system and omitted the two user-confirmed positioning statements the new suite requires immediately after the hero.",
+  "improvement_record_id": "OM-V2-M1-001",
+  "remaining_blockers": [
+    "Canonical Book a call destination and handoff are Unknown.",
+    "Current service set, fees, eligibility, and access rules are incomplete or conflicting.",
+    "Economic-development boilerplate beyond the approved institutional statement is not approved.",
+    "Rendered and accessibility QA are not run."
+  ],
+  "approval_needed": [
+    "Need-router labels",
+    "Economic-development explanatory copy",
+    "Current service and access facts",
+    "Canonical booking destination",
+    "Exact Homepage 2.0 page version"
+  ],
+  "live_website_changed": false
+}

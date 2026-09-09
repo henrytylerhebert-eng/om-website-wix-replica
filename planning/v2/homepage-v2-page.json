@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.2.0",
+  "id": "om-homepage-v2",
+  "page_type": "homepage",
+  "status": "draft",
+  "goal": "Clarity",
+  "canon_version": "1.2.0",
+  "primary_audience": "People considering or building early-stage technology, research-driven, and innovative companies.",
+  "secondary_audiences": [
+    "People who can contribute expertise, relationships, or practical support.",
+    "People funding, partnering with, or evaluating OM's regional purpose."
+  ],
+  "primary_question": "Can Opportunity Machine help me make progress on what I am building, and what should I do next?",
+  "input_basis": "OM Website Skill Suite v1.2.0, the current claims registry and website source scaffold, the page-by-page Wix brief dated 2026-09-09, and the audited four-file candidate snapshot 95e783d.",
+  "target": {
+    "environment": "planning_only",
+    "repository": "https://github.com/henrytylerhebert-eng/om-website-wix-replica",
+    "branch": "codex/om/mock-site-v2",
+    "url": null
+  },
+  "hero": {
+    "elements": [
+      "approved_video",
+      "fixed_phrase",
+      "rotating_statement",
+      "primary_cta"
+    ],
+    "video_asset": "https://www.youtube.com/embed/yk1Ij-wW_P0",
+    "fixed_text": "For founders who…",
+    "rotating_endings": [
+      "want experienced guidance and advice.",
+      "want to meet and build relationships with other founders.",
+      "want clearer insight into what they’re missing.",
+      "want to build real connections with investors.",
+      "want to get farther, faster."
+    ],
+    "cta_label": "Book a call",
+    "cta_destination": null,
+    "approval_status": "protected_copy_approved_destination_blocked"
+  },
+  "sections": [
+    {
+      "id": "opening_identity",
+      "purpose": "State OM's institutional identity and participation economics immediately after the protected hero.",
+      "headline": "Opportunity Machine is an economic-development organization.",
+      "body": "OM takes no equity.",
+      "origin": "new",
+      "claim_ids": [
+        "OM-ECON-001",
+        "OM-EQUITY-001"
+      ],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "opening_experience",
+      "mobile_order": 1,
+      "approval_status": "pending"
+    },
+    {
+      "id": "need_router",
+      "purpose": "Let a founder begin with a real question instead of knowing an OM program name.",
+      "headline": "Start with what you need.",
+      "body": "I have an idea. I am building. I am growing. I need technical help. I am not sure where to begin.",
+      "origin": "new",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": "Route each need to a confirmed support explanation or the primary conversation action.",
+      "internal_link": "Pending the global information-architecture decision.",
+      "display_priority": "high",
+      "mobile_order": 2,
+      "approval_status": "pending"
+    },
+    {
+      "id": "support_explanation",
+      "purpose": "Explain what support is currently available and how a founder accesses it.",
+      "headline": "How OM can help",
+      "body": "Public copy is blocked until the current program set, mentor access, technical support, workspace, membership, fees, eligibility, and participation process are confirmed.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": "Link to current, confirmed service details.",
+      "internal_link": "Pending.",
+      "display_priority": "high",
+      "mobile_order": 3,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "founder_proof",
+      "purpose": "Show attributed founder experience without converting video presence into an outcome claim.",
+      "headline": "Hear from founders.",
+      "body": "Use only the approved GlowSens, Mallard Bay, and Keepers video embeds. Do not add company outcomes, funding figures, or causal claims without separate cleared records.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [
+        "claim.glowsens-video",
+        "claim.mallard-bay-video",
+        "claim.keepers-video"
+      ],
+      "action": "Open a selected founder story.",
+      "internal_link": "Founder Stories destination pending.",
+      "display_priority": "medium",
+      "mobile_order": 4,
+      "approval_status": "pending"
+    },
+    {
+      "id": "regional_purpose",
+      "purpose": "Connect founder support to OM's economic-development purpose without asserting measured regional effects.",
+      "headline": "Why this work matters here",
+      "body": "The exact economic-development explanation remains proposed. It must distinguish OM's purpose from measured company or regional performance.",
+      "origin": "internal_note",
+      "claim_ids": [
+        "OM-ECON-001"
+      ],
+      "proof_slots": [],
+      "action": "Link to About or a later approved Impact and Acadiana page.",
+      "internal_link": "Pending.",
+      "display_priority": "medium",
+      "mobile_order": 5,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "final_invitation",
+      "purpose": "Offer one low-friction human next step.",
+      "headline": "Tell us what you're building.",
+      "body": "",
+      "origin": "new",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": "Book a call",
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 6,
+      "approval_status": "pending"
+    }
+  ],
+  "claims": [
+    {
+      "id": "OM-ECON-001",
+      "statement": "Opportunity Machine is an economic-development organization.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Does not establish government-agency status, public funding, or a measured regional effect."
+    },
+    {
+      "id": "OM-EQUITY-001",
+      "statement": "OM takes no equity.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Does not establish no fees, no conditions, funding availability, IP terms, or eligibility."
+    }
+  ],
+  "disclosures": {
+    "economic_development": {
+      "location": "immediately_after_hero",
+      "status": "required_in_contract"
+    },
+    "no_equity": {
+      "location": "immediately_after_hero_and_before_booking_intake_submission",
+      "status": "required_in_contract"
+    },
+    "fees": {
+      "status": "unknown",
+      "release_blocker_for_participation_offer": true
+    },
+    "mentor_and_workspace_access": {
+      "status": "conflict",
+      "release_blocker": true
+    }
+  },
+  "links": [
+    {
+      "id": "primary-booking",
+      "label": "Book a call",
+      "destination": "[Unknown]",
+      "approved": false,
+      "role": "primary"
+    },
+    {
+      "id": "glowsens-video",
+      "label": "GlowSens founder video",
+      "destination": "https://www.youtube.com/watch?v=lZ1q1jHbgco",
+      "approved": true,
+      "role": "proof"
+    },
+    {
+      "id": "mallard-bay-video",
+      "label": "Mallard Bay founder video",
+      "destination": "https://www.youtube.com/watch?v=IEixV3f1pME",
+      "approved": true,
+      "role": "proof"
+    },
+    {
+      "id": "keepers-video",
+      "label": "Keepers founder video",
+      "destination": "https://www.youtube.com/watch?v=KcOey2-8ttg",
+      "approved": true,
+      "role": "proof"
+    }
+  ],
+  "metrics": [],
+  "testimonial_uses": [],
+  "booking_handoff": {
+    "destination_status": "unknown",
+    "no_equity_before_submission": true,
+    "completion_event_status": "not_implemented"
+  },
+  "seo_geo": {
+    "title_proposal": "Opportunity Machine | Startup Support in Lafayette, Louisiana",
+    "meta_description_proposal": "Opportunity Machine is an economic-development organization. OM takes no equity. Learn how founders can begin a conversation with OM in Lafayette, Louisiana.",
+    "search_demand_status": "unknown",
+    "measurements": "No measurements found."
+  },
+  "manual_reviews": {
+    "claim_semantics": "pass",
+    "quote_context": "not_applicable_with_reason",
+    "copy_style": "pass",
+    "rendered_desktop": "not_run",
+    "rendered_mobile": "not_run",
+    "accessibility": "not_run",
+    "live_destinations": "not_run"
+  },
+  "page_approval": {
+    "status": "pending",
+    "by": null,
+    "source_id": null,
+    "content_sha256": null
+  },
+  "publication_requested": false
+}

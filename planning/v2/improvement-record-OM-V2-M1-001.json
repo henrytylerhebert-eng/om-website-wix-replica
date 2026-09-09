@@ -1,0 +1,24 @@
+{
+  "id": "OM-V2-M1-001",
+  "status": "proposed",
+  "change_class": "M1",
+  "observation": "The preserved candidate improves founder recognition and reduced-motion behavior, but it reintroduces an older conversation CTA, adds a second hero action, and omits the approved economic-development and no-equity opening.",
+  "evidence_locator": [
+    "index.html:47",
+    "index.html:49",
+    "index.html:50",
+    "index.html:57",
+    "main.js:49",
+    "OM Website Skill Suite v1.2.0 canon.json",
+    "DESTIN-WEBSITE-DECISIONS-2026-07.md sections 5-9"
+  ],
+  "affected_file_or_page": "Homepage 2.0",
+  "why_it_matters": "The hero is protected, and the two confirmed positioning statements are the clearest distinction between OM and a conventional accelerator or coworking site.",
+  "competing_explanation": "The older 20-minute conversation and Clarity Check CTAs were likely intended to increase specificity and offer a lower-commitment route, but the later protected homepage contract does not authorize them in the hero.",
+  "proposed_change": "Use the exact four-element hero and place the economic-development and no-equity module immediately after it. Keep Clarity Check outside the hero unless explicitly approved later.",
+  "smallest_useful_test": "Implement only the hero and opening identity module in a local preview, then verify exact text, source order, reduced-motion behavior, mobile layout, and one approved booking destination.",
+  "decision_criterion": "The preview contains exactly four hero elements, all protected text matches canon, the two approved opening statements are plain visible text immediately afterward, and the CTA reaches an approved destination.",
+  "owner": "Tyler Hebert",
+  "approval_status": "pending",
+  "rollback": "Return to candidate snapshot 95e783db2cc21321b26b00f685b3ee1ee3b3081f or the immutable 1.0 tag om-working-mock-site-v1.0."
+}

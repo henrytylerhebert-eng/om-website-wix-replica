@@ -1,0 +1,82 @@
+{
+  "page_id": "om-homepage-v2",
+  "phase": "draft",
+  "passed": true,
+  "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
+  "error_count": 0,
+  "warning_count": 14,
+  "page_content_sha256": "d5310a85c51c4e9d7c0a60569c42f084d294ceb27973c91b4ca0986fc56ec1ad",
+  "findings": [
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section opening_identity is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section need_router is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section support_explanation is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section founder_proof is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section regional_purpose is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section final_invitation is not approved."
+    },
+    {
+      "code": "HERO_DESTINATION",
+      "severity": "warning",
+      "message": "Hero booking destination is missing."
+    },
+    {
+      "code": "LINK_DESTINATION",
+      "severity": "warning",
+      "message": "primary-booking: destination unknown or placeholder."
+    },
+    {
+      "code": "LINK_APPROVAL",
+      "severity": "warning",
+      "message": "primary-booking: destination is not approved."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_desktop: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_mobile: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "accessibility: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "live_destinations: not completed."
+    },
+    {
+      "code": "PAGE_APPROVAL",
+      "severity": "warning",
+      "message": "Exact-version page approval is missing."
+    }
+  ],
+  "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."
+}
