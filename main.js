@@ -7,6 +7,24 @@ if (toggle && links) {
   toggle.addEventListener('click', () => links.classList.toggle('open'));
 }
 
+// Nav dropdown (e.g. Ecosystem > Community/Events/Talent)
+document.querySelectorAll('.nav-dropdown-toggle').forEach((btn) => {
+  const dropdown = btn.closest('.nav-dropdown');
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isOpen = dropdown.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(isOpen));
+  });
+});
+document.addEventListener('click', (e) => {
+  document.querySelectorAll('.nav-dropdown.open').forEach((dropdown) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      dropdown.querySelector('.nav-dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
 // Mark current page in nav
 const here = location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(a => {
@@ -28,14 +46,18 @@ if (filterRow) {
   });
 }
 
-// Hero JTBD rotator — Destin §6. Statements are DRAFTS pending the companion file.
-// "want to get in front of investors" is Destin's own example (§15); others are placeholders.
+// Hero JTBD rotator — approved copy per Update 01 (Homepage hero rotation).
+// Respects prefers-reduced-motion: if set, the first approved line is shown
+// statically and the rotation/fade never starts.
 const rotator = document.getElementById('jtbd-rotator');
-if (rotator) {
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (rotator && !prefersReducedMotion) {
   const statements = [
-    'want to get in front of investors.',
-    'want to know if anyone will actually buy.',
-    'want real customers, not more advice.',
+    'want experienced guidance and advice.',
+    'want to meet and build relationships with other founders.',
+    'want clearer insight into what they\'re missing.',
+    'want to build real connections with investors.',
+    'want to get farther, faster.',
   ];
   let i = 0;
   setInterval(() => {
@@ -53,4 +75,19 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'c' && !/input|textarea|select/i.test(e.target.tagName)) {
     document.body.classList.toggle('hide-flags');
   }
+});
+
+// Consent-gated CTA analytics — same fail-safe pattern as clarity-check.js /
+// ANALYTICS-CONSENT-GATING-SPEC.md. Nothing fires until a real sitewide
+// consent banner sets localStorage 'om_consent' = 'granted'.
+function hasAnalyticsConsent() {
+  try { return localStorage.getItem('om_consent') === 'granted'; }
+  catch (e) { return false; }
+}
+document.querySelectorAll('[data-analytics]').forEach((el) => {
+  el.addEventListener('click', () => {
+    if (!hasAnalyticsConsent()) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: el.dataset.analytics });
+  });
 });
