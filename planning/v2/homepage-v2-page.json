@@ -2,7 +2,7 @@
   "schema_version": "1.2.0",
   "id": "om-homepage-v2",
   "page_type": "homepage",
-  "status": "draft",
+  "status": "approved_draft",
   "goal": "Clarity",
   "canon_version": "1.2.0",
   "primary_audience": "People considering or building early-stage technology, research-driven, and innovative companies.",
@@ -11,7 +11,7 @@
     "People funding, partnering with, or evaluating OM's regional purpose."
   ],
   "primary_question": "Can Opportunity Machine help me make progress on what I am building, and what should I do next?",
-  "input_basis": "OM Website Skill Suite v1.2.0, the current claims registry and website source scaffold, the page-by-page Wix brief dated 2026-09-09, and the audited four-file candidate snapshot 95e783d.",
+  "input_basis": "OM Website Skill Suite v1.2.0, the current claims registry, the page-by-page Wix brief dated 2026-09-09, the audited four-file candidate snapshot 95e783d, the approved four-decision package 5c906ce, and the implemented and browser-verified build 2adafba.",
   "target": {
     "environment": "planning_only",
     "repository": "https://github.com/henrytylerhebert-eng/om-website-wix-replica",
@@ -36,59 +36,74 @@
     ],
     "cta_label": "Book a call",
     "cta_destination": null,
-    "approval_status": "protected_copy_approved_destination_blocked"
+    "approval_status": "protected_copy_approved_destination_blocked",
+    "cta_destination_interim": "contact.html",
+    "cta_destination_owner": "Tyler"
   },
   "sections": [
     {
       "id": "opening_identity",
-      "purpose": "State OM's institutional identity and participation economics immediately after the protected hero.",
-      "headline": "Opportunity Machine is an economic-development organization.",
-      "body": "OM takes no equity.",
+      "purpose": "State OM's institutional identity, whom it supports, and its participation economics immediately after the protected hero.",
+      "eyebrow": "Momentum for Startups",
+      "headline": "Startup support with a regional purpose.",
+      "body": "Opportunity Machine is an economic-development organization. We support people building technology, research-driven, and innovative companies. OM takes no equity.",
       "origin": "new",
       "claim_ids": [
         "OM-ECON-001",
-        "OM-EQUITY-001"
+        "OM-EQUITY-001",
+        "OM-AUDIENCE-001"
       ],
       "proof_slots": [],
       "action": null,
       "internal_link": null,
       "display_priority": "opening_experience",
       "mobile_order": 1,
-      "approval_status": "pending"
+      "approval_status": "approved",
+      "approval_source_id": "S-USER-APPROVAL-0909",
+      "notes": "Absorbs the former regional_purpose section. The approved package places the regional-purpose statement in this module rather than in a separate later section, so the built page has no standalone regional_purpose block. Recorded as improvement OM-V2-M1-003. The heading asserts purpose only; it does not assert a measured regional effect."
     },
     {
       "id": "need_router",
       "purpose": "Let a founder begin with a real question instead of knowing an OM program name.",
+      "eyebrow": "Start Here",
       "headline": "Start with what you need.",
-      "body": "I have an idea. I am building. I am growing. I need technical help. I am not sure where to begin.",
+      "body": "I have an idea I need to test. I am building and need a clearer next step. I need technical support. I need experienced guidance. I am not sure where to begin.",
       "origin": "new",
       "claim_ids": [],
       "proof_slots": [],
       "action": "Route each need to a confirmed support explanation or the primary conversation action.",
-      "internal_link": "Pending the global information-architecture decision.",
+      "internal_link": "Routes 01, 02 and 05 use the interim call flow. Route 03 goes to talent.html and route 04 to mentors.html, both as explanation pages only.",
       "display_priority": "high",
       "mobile_order": 2,
-      "approval_status": "pending"
+      "approval_status": "approved",
+      "approval_source_id": "S-USER-APPROVAL-0909",
+      "notes": "Labels approved. Final destinations for routes 03 and 04 stay blocked on technical-program currentness and the mentor-access rule."
     },
     {
       "id": "support_explanation",
-      "purpose": "Explain what support is currently available and how a founder accesses it.",
-      "headline": "How OM can help",
-      "body": "Public copy is blocked until the current program set, mentor access, technical support, workspace, membership, fees, eligibility, and participation process are confirmed.",
-      "origin": "internal_note",
-      "claim_ids": [],
+      "purpose": "State that support exists in broad terms without promising a program, access rule, price, schedule or outcome.",
+      "eyebrow": "How OM Can Help",
+      "headline": "Practical support for the decision in front of you.",
+      "body": "OM brings together programs, people, and practical support for founders building innovative companies.",
+      "origin": "new",
+      "claim_ids": [
+        "OM-SERVICES-BROAD-001"
+      ],
       "proof_slots": [],
-      "action": "Link to current, confirmed service details.",
-      "internal_link": "Pending.",
+      "action": null,
+      "internal_link": "Blocked. No link until a current, confirmed service page exists.",
       "display_priority": "high",
       "mobile_order": 3,
-      "approval_status": "blocked"
+      "approval_status": "approved",
+      "approval_source_id": "S-USER-APPROVAL-0909",
+      "notes": "Was blocked. The approved package replaced the blocked detail with this broad sentence, which is what the built page renders."
     },
     {
       "id": "founder_proof",
-      "purpose": "Show attributed founder experience without converting video presence into an outcome claim.",
+      "purpose": "Show attributed founder media without converting video presence into an outcome claim or publishing an uncleared quotation.",
+      "eyebrow": "Founder Perspectives",
       "headline": "Hear from founders.",
-      "body": "Use only the approved GlowSens, Mallard Bay, and Keepers video embeds. Do not add company outcomes, funding figures, or causal claims without separate cleared records.",
+      "body": "Renders only the approved GlowSens, Mallard Bay and Keepers video embeds, each with the company name and a neutral line inviting the visitor to watch. No quotation, company outcome, funding figure or causal claim.",
       "origin": "internal_note",
       "claim_ids": [],
       "proof_slots": [
@@ -100,37 +115,28 @@
       "internal_link": "Founder Stories destination pending.",
       "display_priority": "medium",
       "mobile_order": 4,
-      "approval_status": "pending"
-    },
-    {
-      "id": "regional_purpose",
-      "purpose": "Connect founder support to OM's economic-development purpose without asserting measured regional effects.",
-      "headline": "Why this work matters here",
-      "body": "The exact economic-development explanation remains proposed. It must distinguish OM's purpose from measured company or regional performance.",
-      "origin": "internal_note",
-      "claim_ids": [
-        "OM-ECON-001"
-      ],
-      "proof_slots": [],
-      "action": "Link to About or a later approved Impact and Acadiana page.",
-      "internal_link": "Pending.",
-      "display_priority": "medium",
-      "mobile_order": 5,
-      "approval_status": "blocked"
+      "approval_status": "approved",
+      "approval_source_id": "S-USER-APPROVAL-0909",
+      "notes": "A pull-quote attributed jointly to Noah Bergeron and Stefan Arnold was rendered here in build 2adafba and removed. It matched no record in the testimonial bank, and no record in that bank has publication permission. Recorded as improvement OM-V2-M2-002."
     },
     {
       "id": "final_invitation",
-      "purpose": "Offer one low-friction human next step.",
+      "purpose": "Offer one low-friction human next step and repeat the no-equity policy at the decision point.",
+      "eyebrow": "Your Next Step",
       "headline": "Tell us what you're building.",
-      "body": "",
+      "body": "OM takes no equity.",
       "origin": "new",
-      "claim_ids": [],
+      "claim_ids": [
+        "OM-EQUITY-001"
+      ],
       "proof_slots": [],
       "action": "Book a call",
       "internal_link": null,
       "display_priority": "high",
-      "mobile_order": 6,
-      "approval_status": "pending"
+      "mobile_order": 5,
+      "approval_status": "approved",
+      "approval_source_id": "S-USER-APPROVAL-0909",
+      "notes": "The headline near-duplicates the Contact page H1. Node CONT-01 in the page trees carries that open wording decision."
     }
   ],
   "claims": [
@@ -157,6 +163,31 @@
       "approval_status": "approved",
       "publication_status": "approved",
       "limitations": "Does not establish no fees, no conditions, funding availability, IP terms, or eligibility."
+    },
+    {
+      "id": "OM-AUDIENCE-001",
+      "statement": "We support people building technology, research-driven, and innovative companies.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-APPROVAL-0909",
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "States whom OM supports. Does not establish eligibility, a geographic limit, admission, capacity, or that any particular company was supported."
+    },
+    {
+      "id": "OM-SERVICES-BROAD-001",
+      "statement": "OM brings together programs, people, and practical support for founders building innovative companies.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-APPROVAL-0909"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Deliberately broad. Does not establish which programs are current, mentor access, technical-support availability, workspace, membership, fees, eligibility, hours, cohort dates, or any introduction. OM-SERVICES-001, the specific version naming mentorship and workspace, remains pending."
     }
   ],
   "disclosures": {
@@ -211,7 +242,9 @@
   "testimonial_uses": [],
   "booking_handoff": {
     "destination_status": "unknown",
+    "interim_destination": "contact.html",
     "no_equity_before_submission": true,
+    "no_equity_before_submission_verified": "2026-09-09, disclosure element precedes the submit control in document order",
     "completion_event_status": "not_implemented"
   },
   "seo_geo": {
@@ -224,16 +257,42 @@
     "claim_semantics": "pass",
     "quote_context": "not_applicable_with_reason",
     "copy_style": "pass",
-    "rendered_desktop": "not_run",
-    "rendered_mobile": "not_run",
-    "accessibility": "not_run",
-    "live_destinations": "not_run"
+    "rendered_desktop": "pass",
+    "rendered_mobile": "pass",
+    "accessibility": "fail",
+    "live_destinations": "pass"
   },
   "page_approval": {
-    "status": "pending",
-    "by": null,
-    "source_id": null,
-    "content_sha256": null
+    "status": "approved",
+    "by": "Tyler Hebert",
+    "source_id": "S-USER-APPROVAL-0909",
+    "content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6"
   },
-  "publication_requested": false
+  "publication_requested": false,
+  "folded_sections": [
+    {
+      "id": "regional_purpose",
+      "folded_into": "opening_identity",
+      "reason": "The approved four-decision package places the economic-development explanation immediately after the hero, so the built page has no separate regional-purpose section.",
+      "improvement_record_id": "OM-V2-M1-003",
+      "previous_version": "planning/v2/homepage-v2-page.json.bak"
+    }
+  ],
+  "testimonial_use_basis": "None. All 15 records in the suite testimonial bank carry publication_permission_status unknown, original_source_status unknown, editing_permission_status not_granted and publication_approval pending. No testimonial may appear on this page until at least one record is cleared. Canon unknown U-QUOTES.",
+  "manual_review_notes": {
+    "reviewer": "Claude Opus 5, driving a local Chromium against a static server on port 8788",
+    "date": "2026-09-09",
+    "build_reviewed": "2adafba, plus the founder-quote removal in this run",
+    "quote_context": "Not applicable. The page renders no quotation after the founder-quote removal.",
+    "rendered_desktop": "PASS at 1440x900. Exactly four hero elements and one hero action. Heading order h1 to h2 to h3 with no skipped level. No horizontal overflow, document width 1425 against a 1440 viewport. All four video embeds sized and loading. Approved identity and no-equity text render as plain visible content, not dependent on animation.",
+    "rendered_mobile": "PASS at 375x812. Single-column route cards in the approved order. No horizontal overflow, document width 375 against a 375 viewport. Identity module and no-equity statement legible without zoom.",
+    "accessibility": "FAIL on colour contrast, PASS on every other item checked. Failing, measured against WCAG 2.1 AA: white on brand blue #0090CC in the primary button, 3.58:1 where 4.5:1 is required; route-card link text #0090CC on white, 3.58:1; section eyebrow #0090CC on #f4f6f8, 3.31:1; body and card text #76777A on white, 4.48:1. Passing: the hero rotating line at 38.4px clears the 3:1 large-text floor at 3.58:1; every dark-section text pair at 12.28:1 or better; lang attribute present; one h1 with no skipped heading levels; header, main and footer landmarks present; all images carry alt text and all iframes carry titles; visible focus ring on links and buttons; the mobile nav toggle reports aria-expanded correctly after the fix in this build; hero text present without JavaScript; reduced-motion path shows the first approved line statically. Not run: assistive technology walkthrough with a real screen reader, and zoom to 400 percent. The contrast failures sit in protected visual tokens sourced to S-VISUAL, so they are proposed in improvement record OM-V2-M2-001 rather than changed here.",
+    "live_destinations": "PASS for every destination the built page actually references: contact.html, talent.html, mentors.html, about.html, builder-program.html, membership.html, community.html, events.html, ecosystem.html, alumni.html all resolve, and the three founder video embeds load. The canonical booking destination is not among them because it is still Unknown; that gap is reported separately by HERO_DESTINATION and the primary-booking link findings, not concealed by this pass. Footer Privacy and Cookies links resolve to # and are recorded in the page trees as GLOBAL-LEGAL-01.",
+    "not_run": [
+      "assistive technology walkthrough",
+      "zoom to 400 percent",
+      "live form submission",
+      "analytics verification"
+    ]
+  }
 }

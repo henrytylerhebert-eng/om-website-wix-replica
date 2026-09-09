@@ -4,39 +4,9 @@
   "passed": true,
   "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
   "error_count": 0,
-  "warning_count": 14,
-  "page_content_sha256": "d5310a85c51c4e9d7c0a60569c42f084d294ceb27973c91b4ca0986fc56ec1ad",
+  "warning_count": 4,
+  "page_content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6",
   "findings": [
-    {
-      "code": "SECTION_APPROVAL",
-      "severity": "warning",
-      "message": "Section opening_identity is not approved."
-    },
-    {
-      "code": "SECTION_APPROVAL",
-      "severity": "warning",
-      "message": "Section need_router is not approved."
-    },
-    {
-      "code": "SECTION_APPROVAL",
-      "severity": "warning",
-      "message": "Section support_explanation is not approved."
-    },
-    {
-      "code": "SECTION_APPROVAL",
-      "severity": "warning",
-      "message": "Section founder_proof is not approved."
-    },
-    {
-      "code": "SECTION_APPROVAL",
-      "severity": "warning",
-      "message": "Section regional_purpose is not approved."
-    },
-    {
-      "code": "SECTION_APPROVAL",
-      "severity": "warning",
-      "message": "Section final_invitation is not approved."
-    },
     {
       "code": "HERO_DESTINATION",
       "severity": "warning",
@@ -55,27 +25,7 @@
     {
       "code": "MANUAL_REVIEW",
       "severity": "warning",
-      "message": "rendered_desktop: not completed."
-    },
-    {
-      "code": "MANUAL_REVIEW",
-      "severity": "warning",
-      "message": "rendered_mobile: not completed."
-    },
-    {
-      "code": "MANUAL_REVIEW",
-      "severity": "warning",
       "message": "accessibility: not completed."
-    },
-    {
-      "code": "MANUAL_REVIEW",
-      "severity": "warning",
-      "message": "live_destinations: not completed."
-    },
-    {
-      "code": "PAGE_APPROVAL",
-      "severity": "warning",
-      "message": "Exact-version page approval is missing."
     }
   ],
   "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."

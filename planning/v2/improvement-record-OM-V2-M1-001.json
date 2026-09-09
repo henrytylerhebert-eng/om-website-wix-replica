@@ -1,6 +1,6 @@
 {
   "id": "OM-V2-M1-001",
-  "status": "proposed",
+  "status": "resolved",
   "change_class": "M1",
   "observation": "The preserved candidate improves founder recognition and reduced-motion behavior, but it reintroduces an older conversation CTA, adds a second hero action, and omits the approved economic-development and no-equity opening.",
   "evidence_locator": [
@@ -19,6 +19,8 @@
   "smallest_useful_test": "Implement only the hero and opening identity module in a local preview, then verify exact text, source order, reduced-motion behavior, mobile layout, and one approved booking destination.",
   "decision_criterion": "The preview contains exactly four hero elements, all protected text matches canon, the two approved opening statements are plain visible text immediately afterward, and the CTA reaches an approved destination.",
   "owner": "Tyler Hebert",
-  "approval_status": "pending",
-  "rollback": "Return to candidate snapshot 95e783db2cc21321b26b00f685b3ee1ee3b3081f or the immutable 1.0 tag om-working-mock-site-v1.0."
+  "approval_status": "approved",
+  "rollback": "Return to candidate snapshot 95e783db2cc21321b26b00f685b3ee1ee3b3081f or the immutable 1.0 tag om-working-mock-site-v1.0.",
+  "approval_source_id": "S-USER-APPROVAL-0909",
+  "resolution": "Implemented in build 2adafba and approved. The hero carries exactly four elements and one action, the older 20-minute conversation and Clarity Check CTAs are gone from it, and the economic-development and no-equity statements render as plain visible text immediately after it. Verified at 1440x900 and 375x812. The decision criterion is met except for its last clause: the CTA still does not reach an approved destination, which stays open as the booking gate."
 }

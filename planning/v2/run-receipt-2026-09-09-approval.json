@@ -1,0 +1,87 @@
+{
+  "run_id": "om-homepage-v2-approval-2026-09-09",
+  "date": "2026-09-09",
+  "mode": "record_approval_and_verify",
+  "input_artifacts": [
+    "planning/v2/HOMEPAGE-V2-FOUR-DECISION-PACKAGE.md",
+    "planning/v2/PAGE-TREES-V2.md",
+    "planning/v2/homepage-v2-page.json",
+    "index.html",
+    "contact.html",
+    "styles.css",
+    "main.js",
+    "OM Website Skill Suite v1.2.0"
+  ],
+  "canon_version": "1.2.0",
+  "source_ids": ["S-USER-APPROVAL-0909", "S-USER-STRATEGY", "S-HERO-AUG", "S-CTA-AUG", "S-JULY-BRIEF", "S-VISUAL"],
+  "files_changed": [
+    "index.html",
+    "planning/v2/homepage-v2-page.json",
+    "planning/v2/homepage-v2-qa.json",
+    "planning/v2/homepage-v2-release-qa.json",
+    "planning/v2/improvement-record-OM-V2-M1-001.json",
+    "planning/v2/improvement-record-OM-V2-M1-003.json",
+    "planning/v2/improvement-record-OM-V2-M2-001.json",
+    "planning/v2/improvement-record-OM-V2-M2-002.json",
+    "planning/v2/PAGE-TREES-V2.md",
+    "planning/v2/run-receipt-2026-09-09-approval.json"
+  ],
+  "files_changed_outside_repo": [
+    "OM_Website_Skill_Suite_v1.2.0/skills/om-website-strategist/references/sources.json, added source record S-USER-APPROVAL-0909, backup kept at sources.json.bak-20260909"
+  ],
+  "protected_content_changed": false,
+  "protected_content_proposed": "Visual tokens --blue and --gray, proposed in OM-V2-M2-001, not applied",
+  "checks_run": [
+    "homepage draft record QA",
+    "homepage release-gate QA",
+    "rendered desktop review at 1440x900",
+    "rendered mobile review at 375x812",
+    "heading order and landmark check",
+    "horizontal overflow check at both viewports",
+    "colour contrast measurement on 16 text and control pairs",
+    "keyboard focus and focus-visible check",
+    "mobile nav aria-expanded behaviour check",
+    "no-script text presence check",
+    "contact form label and disclosure-order check",
+    "local destination existence check",
+    "testimonial bank reconciliation against rendered quotations",
+    "banned-word and dash lint on all newly proposed copy",
+    "JavaScript syntax check"
+  ],
+  "checks_not_run": [
+    "assistive technology walkthrough with a real screen reader",
+    "zoom to 400 percent",
+    "live form submission",
+    "live booking completion",
+    "analytics verification",
+    "participant research"
+  ],
+  "qa_result": {
+    "draft": "DRAFT_CHECKS_PASS_WITH_WARNINGS, 0 errors, 4 warnings, down from 14 warnings",
+    "release": "BLOCKED, 4 errors, down from 14",
+    "page_content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6",
+    "note": "Three of the four remaining findings share one root cause, the Unknown booking destination. The fourth reports accessibility as not completed, which is the validator's only vocabulary for any value other than pass; the review was completed and failed on colour contrast, and manual_review_notes carries the measurements."
+  },
+  "material_learning": "The homepage published a founder quotation that matches no record in the testimonial bank, attributed jointly to two people who appear in that bank as separate speakers with different sentences. The wider fact is that no record in the bank has publication permission, so no testimonial can appear on any public page yet. Approving a video as media had been treated in practice as covering words drawn from it.",
+  "improvement_record_ids": ["OM-V2-M1-001", "OM-V2-M1-003", "OM-V2-M2-001", "OM-V2-M2-002"],
+  "remaining_blockers": [
+    "Canonical Book a call destination and post-click process are Unknown. Three of four release errors.",
+    "Colour contrast on protected visual tokens fails AA. Proposed in OM-V2-M2-001, awaiting approval of exact values.",
+    "No testimonial record in the bank has publication permission.",
+    "Current service set, fees, eligibility and access rules remain incomplete or conflicting for every inner page.",
+    "Footer Privacy and Cookies links resolve to #."
+  ],
+  "approval_needed": [
+    "Canonical booking destination",
+    "Exact colour values in OM-V2-M2-001",
+    "The fourteen wording decisions listed in PAGE-TREES-V2.md",
+    "The ten operating facts rolled up in PAGE-TREES-V2.md"
+  ],
+  "approval_recorded": {
+    "what": "Economic-development module, five need-based visitor labels, broad interim service sentence, retaining the protected Book a call label",
+    "by": "Tyler Hebert",
+    "source_id": "S-USER-APPROVAL-0909",
+    "content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6"
+  },
+  "live_website_changed": false
+}

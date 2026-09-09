@@ -1,0 +1,29 @@
+{
+  "id": "OM-V2-M2-001",
+  "status": "proposed",
+  "change_class": "M2",
+  "observation": "Measured in a local Chromium against the built 2.0 homepage on 2026-09-09: white text on the brand blue #0090CC primary button reaches 3.58:1; route-card link text in #0090CC on white reaches 3.58:1; the section eyebrow in #0090CC on #f4f6f8 reaches 3.31:1; body and card text in #76777A on white reaches 4.48:1. WCAG 2.1 AA requires 4.5:1 for normal text and 3:1 for large text. The hero rotating line in #0090CC at 38.4px and 600 weight reaches 3.58:1 and therefore passes as large text.",
+  "evidence_locator": [
+    "styles.css:--blue #0090CC",
+    "styles.css:--gray #76777A",
+    "index.html:43 hero primary button",
+    "index.html:75 route-card link",
+    "index.html:55 section eyebrow",
+    "planning/v2/homepage-v2-page.json manual_review_notes.accessibility",
+    "OM Website Skill Suite v1.2.0 canon.json visual_tokens, contrast_status not_tested"
+  ],
+  "affected_file_or_page": "styles.css, sitewide",
+  "why_it_matters": "The primary button is the one control the whole homepage drives toward, and its label is the least readable text on the page. The canon records contrast_status as not_tested, so this is the first measurement rather than a regression.",
+  "competing_explanation": "The palette was chosen for brand recognition from the OM social graphics reference, not for text contrast, and #0090CC does pass as large display type. It is legitimate to keep it wherever it appears large. The failure is specific to small text and to white-on-blue controls, not to the colour itself.",
+  "proposed_change": "Keep #0090CC as the brand fill, border, stripe and large-display colour, including the hero rotating line, which passes unchanged. Introduce one darker token of the same hue for small text and for control backgrounds: --blue-ink #007CB2, which reaches 4.64:1 against white and carries white text at 4.64:1. Apply it to .btn-blue background, .route-card a, .kicker and any blue text below 18.66px. Darken --gray from #76777A to #747578, which reaches 4.61:1 and is visually indistinguishable at text sizes.",
+  "alternatives_considered": [
+    "Navy #243746 text on a #0090CC button reaches only 3.43:1 and also fails.",
+    "Darkening the single --blue token sitewide would change the hero line and every brand fill, which is a larger visual change than the failure requires."
+  ],
+  "smallest_useful_test": "Apply the two token changes in a local preview, then re-measure the four failing pairs and confirm each reaches 4.5:1 or better, that the hero line and brand fills are unchanged, and that no dark-section pair regresses below its current ratio.",
+  "decision_criterion": "All four failing pairs reach 4.5:1 or better; #0090CC still appears as the hero rotating line, card top borders and brand fills; no previously passing pair drops.",
+  "owner": "Tyler Hebert",
+  "approval_status": "pending",
+  "approval_note": "Protected visual tokens are sourced to S-VISUAL. Under the improvement protocol an M2 change is proposed only until the responsible person approves the exact values. The change is staged and not applied.",
+  "rollback": "Revert the two custom-property values in styles.css. No markup or copy changes are involved."
+}

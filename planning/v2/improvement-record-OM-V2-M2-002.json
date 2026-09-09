@@ -1,0 +1,27 @@
+{
+  "id": "OM-V2-M2-002",
+  "status": "partially_applied",
+  "change_class": "M2",
+  "observation": "Build 2adafba rendered a pull-quote on the homepage founder-proof section reading \"The building is great, but 90% of the value is the people - because the people are what make it valuable.\" attributed to \"Noah Bergeron and Stefan Arnold, Founders\". That sentence matches no record in the suite testimonial bank. The bank holds three GlowSens records, T004 and T005 for Noah Bergeron and T013 for Stefan Arnold, each a different sentence and each a single speaker. Across all 15 bank records, publication_permission_status is unknown, original_source_status is unknown, editing_permission_status is not_granted and publication_approval is pending.",
+  "evidence_locator": [
+    "index.html:127 in build 2adafba, since removed",
+    "OM Website Skill Suite v1.2.0 testimonials.json records T004, T005, T013",
+    "canon.json unknowns U-QUOTES",
+    "canon.json exclusions, no generated testimonials or silent rewriting of quotations",
+    "planning/v2/homepage-v2-page.json testimonial_use_basis"
+  ],
+  "affected_file_or_page": "Homepage 2.0 founder proof; the same pattern needs checking on alumni.html and community.html",
+  "why_it_matters": "A joint attribution of one sentence to two named people, with no matching cleared record, publishes words in a real founder's name that the registry cannot support. Approval of the video as media does not clear a quotation drawn from it, and the surrounding sentences were never in scope of that approval.",
+  "competing_explanation": "The sentence may be an accurate transcription from the approved GlowSens video, in which case the words were genuinely said and the defect is a missing record and a missing permission rather than a fabricated quote. That distinction cannot be settled from the registry alone, which is exactly why it may not be published in the meantime.",
+  "applied_change": "The quote and its attribution line were removed from index.html in this run. The approved video embed and the company name remain, and the card now carries the same neutral invitation line as the Mallard Bay and Keepers cards. The page contract records testimonial_uses as empty with the reason.",
+  "proposed_change": "Before any founder quotation returns to a public page: locate the original source, record it in the testimonial bank with an exact quote and exact attribution per speaker, obtain and record written publication permission, and set publication_approval. A quotation attributed to two people needs either two records or a source that genuinely shows them speaking jointly.",
+  "smallest_useful_test": "Re-run the homepage draft and release QA and confirm no testimonial finding appears, and grep the built 2.0 pages for quotation markup and confirm none remains.",
+  "decision_criterion": "No public 2.0 page renders a quotation that lacks a bank record with granted publication permission and an approved publication_approval.",
+  "owner": "Tyler Hebert",
+  "approval_status": "removal_applied_clearance_pending",
+  "related_findings": [
+    "community.html renders an unattributed sentence styled as a blockquote, \"OM is not here to hand out funding; we are here to build the viability that makes funding possible.\" It is OM speaking rather than a testimonial, but it makes an operating claim in quotation styling and has no source record.",
+    "mentors.html carries a self-labelled placeholder quotation, \"[A working principle, in the mentor's own words.]\", inside a block marked \"Placeholder, awaiting real spotlight\". It is labelled rather than passed off as real, and must not reach a public build."
+  ],
+  "rollback": "The removed markup is recoverable from build 2adafba. Restoring it would reintroduce an uncleared quotation and is not recommended."
+}

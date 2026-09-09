@@ -1,0 +1,21 @@
+{
+  "id": "OM-V2-M1-003",
+  "status": "applied",
+  "change_class": "M1",
+  "observation": "The draft contract carried six sections including a standalone regional_purpose block in mobile position 5, headed \"Why this work matters here\". The approved four-decision package instead places the economic-development explanation in the module immediately after the hero, and the built page has no separate regional-purpose section.",
+  "evidence_locator": [
+    "planning/v2/homepage-v2-page.json.bak sections[4] regional_purpose",
+    "planning/v2/HOMEPAGE-V2-FOUR-DECISION-PACKAGE.md section 3",
+    "index.html:53 identity-section as built"
+  ],
+  "affected_file_or_page": "Homepage 2.0 page contract",
+  "why_it_matters": "A contract that lists a section the page does not render stops describing the page. Every later check, approval and content hash would be computed against a structure that does not exist.",
+  "competing_explanation": "A separate later regional-purpose section would give partners and stakeholders a dedicated bridge, which is what the page-by-page brief recommends. That role now belongs to the proposed Impact and Acadiana destination rather than to a homepage block.",
+  "applied_change": "regional_purpose is folded into opening_identity. The fold is recorded in the contract under folded_sections with the reason and a pointer to the previous version. Mobile order renumbered 1 to 5.",
+  "smallest_useful_test": "Confirm the contract section list matches the rendered section list on the built page, and that the first section still contains both the economic-development identity and the no-equity statement as the homepage checks require.",
+  "decision_criterion": "Contract sections and rendered sections correspond one to one, and NO_EQUITY_OPENING and ECONOMIC_OPENING both pass.",
+  "owner": "Tyler Hebert",
+  "approval_status": "approved",
+  "approval_source_id": "S-USER-APPROVAL-0909",
+  "rollback": "planning/v2/homepage-v2-page.json.bak holds the six-section draft."
+}

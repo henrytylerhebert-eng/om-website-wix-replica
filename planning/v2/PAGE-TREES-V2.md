@@ -106,7 +106,7 @@ home
 ├── HOME-04  support summary                             [Proposed, broad]
 │   └── "OM brings together programs, people, and practical support for founders building innovative companies."
 ├── HOME-05  founder perspectives                        [Approved media]
-│   ├── GlowSens video + attributed quote
+│   ├── GlowSens video                                [quote removed, OM-V2-M2-002]
 │   ├── Mallard Bay video
 │   └── Keepers video
 └── HOME-06  final invitation                            [Proposed]
@@ -300,7 +300,7 @@ builder
 mentors (current)
 ├── hero  h1 "The Mentor Ecosystem."
 ├── Mentor of the Month
-│   └── "[Mentor Name]"                          [LIVE PLACEHOLDER]
+│   └── "[Mentor Name]"                          [labelled placeholder]
 ├── Our Mentor Lineup                            [41 profile links vs 20 approved]
 └── "Ready to meet your mentors?"                [implies access]
 ```
@@ -326,7 +326,7 @@ mentors
 
 | Node | Line | Status | Decision |
 | --- | --- | --- | --- |
-| MENT-01 | `Mentor of the Month` / `[Mentor Name]` | Remove | A live placeholder. Remove the block or fill it with a cleared, permissioned profile. |
+| MENT-00 | `Mentor of the Month` / `[Mentor Name]` | Remove | A placeholder, and it labels itself as one: dashed border, a `Placeholder, awaiting real spotlight` tag, and a note that the Wix build ships a fictional profile in this slot. It is not passed off as real. It still must not reach a public build. Remove the block, or fill it with a cleared, permissioned profile. |
 | MENT-01 | `The Mentor Ecosystem.` | Remove | Names a system, not a reader benefit. |
 | MENT-03 | Mentor page: mentorship is strictly for members who completed Builder 1.0. Membership page: members may request one-on-one mentor meetings. | Blocked | Tyler confirms one governing rule. Both statements cannot stand. |
 | MENT-03 | `guarded`, `strictly`, `pre-seed success` | Remove | Control and outcome language in place of a process explanation. |
@@ -420,6 +420,7 @@ founder-stories
 | --- | --- | --- | --- |
 | STORY-01 | `Evidence in Practice.` | Remove | Describes the page's argument, not the founders. |
 | STORY-03 | Any company funding, revenue, jobs, or milestone | Blocked | Each assertion needs its own cleared record plus founder permission. Videos being approved does not clear the surrounding sentences. |
+| STORY-03b | Any founder quotation, on any page | Blocked | All 15 records in the testimonial bank carry unknown publication permission, unknown original source, ungranted editing permission, and pending publication approval. No testimonial can appear on a public page until at least one record clears. See `OM-V2-M2-002`. |
 | STORY-03 | `a universal starting point` | Remove | Reserved for the Builder hero. |
 | STORY-04 | `Would an investor trust this?` | Remove | Puts an investor between the founder and the story. |
 
@@ -475,6 +476,7 @@ community-and-events
 | --- | --- | --- | --- |
 | COMM-01 | `Community Expectations.` | Remove | Opening with conduct rules reads as gatekeeping. Expectations move to COMM-04. |
 | COMM-03 | `High-Trust Engagement`, `non-negotiable` | Remove | Guarded tone. Describe what people actually do. |
+| COMM-03b | `OM is not here to hand out funding; we are here to build the viability that makes funding possible.` | Blocked | Rendered as an unattributed blockquote. It is OM speaking rather than a founder, but quotation styling implies a speaker, and it asserts what OM does and does not do without a source record. De-quote it as plain institutional copy and clear the claim, or remove it. |
 | COMM-04 | Startup Circle next date | Unknown | Format is approved. Do not print a date until one exists. |
 | EVENT-01 | `TBD` event content | Remove | No placeholder ships. |
 | EVENT-01 | `400+`, `$40K+`, `92%` | Remove | No period, population, definition, or source. |
@@ -644,3 +646,22 @@ Fourteen lines need no outside confirmation. They are wording choices only.
 ## Measurements
 
 No analytics or search baseline was reviewed. **No measurements found.**
+
+## Approval and gate status
+
+Recorded 2026-09-09 from source `S-USER-APPROVAL-0909`, content hash `685d4add…5fbcad6`.
+
+**Approved and now recorded in the page contract:** the economic-development module, the five need-based visitor labels, the broad interim service sentence, and retaining the protected `Book a call` label. All five homepage sections carry an exact-version approval. Two claims were added and approved, `OM-AUDIENCE-001` for the audience sentence and `OM-SERVICES-BROAD-001` for the broad support sentence. `OM-SERVICES-001`, the specific version naming mentorship and workspace, stays pending.
+
+**Suite QA:** draft passes with 4 warnings, down from 14. Release stays `BLOCKED` with 4 errors, down from 14.
+
+| Remaining release error | Root cause | Owner |
+| --- | --- | --- |
+| `HERO_DESTINATION` | Booking destination Unknown | Tyler |
+| `LINK_DESTINATION` primary-booking | Same | Tyler |
+| `LINK_APPROVAL` primary-booking | Same | Tyler |
+| `MANUAL_REVIEW` accessibility | Colour contrast fails AA on protected visual tokens. Proposed in `OM-V2-M2-001`, not applied. | Tyler |
+
+The accessibility line reads `not completed` because `pass` and `not_applicable_with_reason` are the only values the mechanical check clears. The review was completed and it failed; the measurements sit in `manual_review_notes.accessibility` in the page contract.
+
+**Rendered review, build 2adafba plus the quote removal:** desktop 1440x900 PASS, mobile 375x812 PASS, live destinations PASS for every reference the page makes, accessibility FAIL on four colour pairs and PASS on every other item checked.
