@@ -4,7 +4,11 @@
 const toggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');
 if (toggle && links) {
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  toggle.setAttribute('aria-expanded', String(links.classList.contains('open')));
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
 }
 
 // Nav dropdown (e.g. Ecosystem > Community/Events/Talent)

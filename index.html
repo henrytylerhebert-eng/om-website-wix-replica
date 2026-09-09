@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Opportunity Machine</title>
+<meta name="description" content="Opportunity Machine is an economic-development organization. OM takes no equity. Start with the question in front of you.">
+<title>Opportunity Machine | Momentum for Startups</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="replica-banner">INTERNAL REPLICA — homepage restructured around the founder-experience brief (2026-08): Recognition → Progress → Place → Moments → Mechanism → Evidence → Community → Advancement → Local Access → Conversation. Evidence section uses only registry-approved claims (three OM videos + the State-C process-proof fallback copy) — no unsourced stats, names, or dollar figures. Not for public use until the claims registry clears more content.</div>
+<div class="replica-banner">OM WORKING MOCK SITE 2.0 - INTERNAL CANDIDATE. The booking link uses the local contact mock until OM confirms its scheduling system. This version is not approved for publication.</div>
 
 <header class="site-header">
   <div class="nav-bar">
     <a class="brand" href="index.html"><img src="assets/om-logo-reversed.png" alt="Opportunity Machine"></a>
-    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-nav">
       <li><a href="about.html">About OM</a></li>
       <li><a href="builder-program.html">Builder Program</a></li>
       <li><a href="membership.html">Membership</a></li>
@@ -26,307 +27,131 @@
       <li><a href="ecosystem.html">Ecosystem</a></li>
       <li><a href="talent.html">Talent</a></li>
       <li><a href="alumni.html">Alumni</a></li>
-      <li><a class="nav-cta" href="contact.html">Schedule Now</a></li>
+      <li><a class="nav-cta" href="contact.html" data-destination-status="interim">Book a call</a></li>
     </ul>
   </div>
 </header>
 
 <main>
 
-<!-- ============================================================
-     SECTION 1 — RECOGNITION
-     Approved hero copy (Update 01). Job of this section is
-     self-recognition, not explaining OM. One primary CTA; one
-     secondary CTA only because clarity-check.html already exists
-     as real site architecture (low-commitment, doesn't compete
-     visually — ghost button vs. solid primary).
-     ============================================================ -->
-<section class="hero hero-light">
-  <div class="wrap split">
-    <div>
-      <h1>For founders who&hellip;<br><span id="jtbd-rotator" class="jtbd">want experienced guidance and advice.</span></h1>
+<!-- Protected four-element hero: video, fixed phrase, rotating statement, CTA. -->
+<section class="hero hero-light" aria-labelledby="homepage-title">
+  <div class="wrap split hero-split">
+    <div class="hero-copy">
+      <h1 id="homepage-title"><span class="hero-fixed">For founders who&hellip;</span><span id="jtbd-rotator" class="jtbd">want experienced guidance and advice.</span></h1>
       <div class="cta-row">
-        <a class="btn btn-blue" href="contact.html" data-analytics="homepage_hero_book_conversation">Book a 20-minute conversation &rarr;</a>
-        <a class="btn btn-ghost-navy" href="clarity-check.html" data-analytics="homepage_hero_clarity_check">Take the 2-minute Clarity Check</a>
+        <a class="btn btn-blue" href="contact.html" data-analytics="homepage_hero_book_call" data-destination-status="interim">Book a call</a>
       </div>
     </div>
-    <div style="aspect-ratio:16/9;border-radius:var(--radius-card);overflow:hidden;">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yk1Ij-wW_P0" title="Opportunity Machine" frameborder="0" allowfullscreen></iframe>
+    <div class="video-frame hero-video">
+      <iframe src="https://www.youtube.com/embed/yk1Ij-wW_P0" title="Opportunity Machine overview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     SECTION 2 — PROGRESS
-     "What are you trying to move forward?" (Update 02, proposed
-     copy). Kept as-is — already founder-desire-framed, not
-     service-first, and not a six-card feature wall.
-     ============================================================ -->
-<section>
+<!-- Approved identity and no-equity statements; explanatory copy is the reviewed 2.0 candidate. -->
+<section class="identity-section tight" aria-labelledby="identity-title">
+  <div class="wrap identity-copy">
+    <span class="kicker">Momentum for Startups</span>
+    <h2 id="identity-title">Startup support with a regional purpose.</h2>
+    <p>Opportunity Machine is an economic-development organization.</p>
+    <p>We support people building technology, research-driven, and innovative companies.</p>
+    <p class="no-equity">OM takes no equity.</p>
+  </div>
+</section>
+
+<!-- Visitor needs lead; program names remain secondary. -->
+<section aria-labelledby="need-title">
   <div class="wrap">
     <div class="section-head center">
-      <h2>Trying to move your tech startup forward?</h2>
+      <span class="kicker">Start Here</span>
+      <h2 id="need-title">Start with what you need.</h2>
     </div>
-    <div class="grid cols-3">
-      <div class="card"><h3>Clearer direction</h3><p>You want experienced perspective on the decisions in front of you.</p></div>
-      <div class="card"><h3>Founder relationships</h3><p>You want a trusted circle of people building through similar challenges.</p></div>
-      <div class="card"><h3>Better visibility</h3><p>You want help spotting assumptions, gaps, and questions before they become expensive.</p></div>
-      <div class="card"><h3>Investor readiness</h3><p>You want to enter investor conversations with stronger evidence and a clearer story.</p></div>
-      <div class="card"><h3>Meaningful momentum</h3><p>You want to turn the next few months into measurable progress.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 3 — PLACE
-     "What is Opportunity Machine?" answered without a services
-     list. Positioning line is verbatim from the founder-experience
-     brief. Photo is a documented TODO — no verified Downtown
-     Lafayette / workspace image exists in this repo's assets yet.
-     ============================================================ -->
-<section class="dim">
-  <div class="wrap split">
-    <div>
-      <span class="kicker">A Home Base, Not a Building</span>
-      <h2>A home base in Downtown Lafayette.</h2>
-      <p class="lede" style="margin-top:1rem;">Opportunity Machine is a home base for people building scalable companies in Downtown Lafayette. Not a class. Not just an office. A place to come back to, again and again, while you figure out what you're building.</p>
-      <p style="margin-top:1.2rem;color:var(--gray);">Here, founders come to:</p>
-      <ul style="margin-top:0.8rem;display:grid;gap:10px;color:var(--ink);">
-        <li>Work</li>
-        <li>Talk through important decisions</li>
-        <li>Meet other founders</li>
-        <li>Meet mentors</li>
-        <li>Test ideas</li>
-        <li>Build evidence</li>
-        <li>Find relevant connections</li>
-      </ul>
-    </div>
-    <div style="border-radius:var(--radius-card);aspect-ratio:4/3;background:var(--paper-dim);display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:0.9rem;text-align:center;padding:24px;">
-      Photo TBD — a real Downtown Lafayette / OM workspace image is needed here. No verified asset exists in this repo yet.
+    <div class="route-grid">
+      <article class="route-card">
+        <span class="route-number" aria-hidden="true">01</span>
+        <h3>I have an idea I need to test.</h3>
+        <p>Start by naming what must be true before you build.</p>
+        <a href="contact.html" data-destination-status="interim">Book a call <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="route-card">
+        <span class="route-number" aria-hidden="true">02</span>
+        <h3>I am building and need a clearer next step.</h3>
+        <p>Focus the decision in front of you and the evidence it needs.</p>
+        <a href="contact.html" data-destination-status="interim">Book a call <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="route-card">
+        <span class="route-number" aria-hidden="true">03</span>
+        <h3>I need technical support.</h3>
+        <p>Review the technical-support paths and the questions they address.</p>
+        <a href="talent.html">Explore technical support <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="route-card">
+        <span class="route-number" aria-hidden="true">04</span>
+        <h3>I need experienced guidance.</h3>
+        <p>Learn about the mentor network while OM confirms its access rules.</p>
+        <a href="mentors.html">Explore mentor guidance <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="route-card">
+        <span class="route-number" aria-hidden="true">05</span>
+        <h3>I am not sure where to begin.</h3>
+        <p>Start with a conversation about the question in front of you.</p>
+        <a href="contact.html" data-destination-status="interim">Book a call <span aria-hidden="true">&rarr;</span></a>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     SECTION 4 — MOMENTS
-     "When would I use it?" through recognizable founder moments,
-     not a "When You Need Us" section title. Quotes and progress
-     lines are verbatim from the founder-experience brief.
-     ============================================================ -->
-<section>
-  <div class="wrap">
-    <div class="section-head center">
-      <h2>Wherever you're starting, there's a next move.</h2>
-    </div>
-    <div class="grid cols-3">
-      <div class="card">
-        <div class="tag">Idea</div>
-        <p class="quote-line">"I have an idea I keep thinking about."</p>
-        <p class="leave-with"><strong>Progress</strong>Find out whether it deserves more time.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Prototype</div>
-        <p class="quote-line">"I built something."</p>
-        <p class="leave-with"><strong>Progress</strong>See how real customers respond.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Early Customer Activity</div>
-        <p class="quote-line">"People are trying it. Now what?"</p>
-        <p class="leave-with"><strong>Progress</strong>Understand what makes them return, pay, or tell someone else.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Conflicting Directions</div>
-        <p class="quote-line">"I could work on ten different things."</p>
-        <p class="leave-with"><strong>Progress</strong>Get clear on what matters next.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Knowledge Ceiling</div>
-        <p class="quote-line">"I've reached the edge of what I know."</p>
-        <p class="leave-with"><strong>Progress</strong>Get the right people around the question.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Early Traction</div>
-        <p class="quote-line">"Something is starting to work."</p>
-        <p class="leave-with"><strong>Progress</strong>Find out whether it can repeat.</p>
-      </div>
-      <div class="card">
-        <div class="tag">Capital Conversation</div>
-        <p class="quote-line">"Investors or partners are asking for proof."</p>
-        <p class="leave-with"><strong>Progress</strong>Build the evidence behind the story.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 5 — MECHANISM
-     "What actually happens here?" Kept deliberately simple — the
-     sequence itself is the headline. No curriculum dump; that
-     detail lives on builder-program.html and is one click away.
-     ============================================================ -->
-<section class="dark on-dark">
+<!-- Broad service statement only; detailed operating and access facts remain blocked. -->
+<section class="dark on-dark support-summary" aria-labelledby="support-title">
   <div class="wrap center">
-    <span class="kicker">How It Works</span>
-    <h2 class="spaced">Talk &rarr; Test &rarr; Learn &rarr; Build &rarr; Measure &rarr; Decide</h2>
-    <p class="lede" style="margin:1.4rem auto 0;">OM doesn't hand you answers. It helps you get better information for the decisions you're already trying to make — through 1:1 coaching, mentorship, customer discovery, Builder programming, workspace, peer relationships, introductions, real experiments, and business-model work.</p>
-    <div class="cta-row center" style="margin-top:2rem;">
-      <a class="btn btn-ghost" href="builder-program.html">See the full Builder program</a>
-    </div>
+    <span class="kicker">How OM Can Help</span>
+    <h2 id="support-title">Practical support for the decision in front of you.</h2>
+    <p class="lede">OM brings together programs, people, and practical support for founders building innovative companies.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     SECTION 6 — EVIDENCE
-     Uses WEBSITE-PROOF-FALLBACK-COPY.md "State C" copy (the
-     correct state right now — no featured story/stat has cleared
-     the claims registry) plus the three videos + one quote that
-     ARE approved_public. No names, dollar figures, or counts
-     beyond what's listed as cleared.
-     ============================================================ -->
-<section>
+<!-- Approved public media with narrow framing and no outcome claims. -->
+<section aria-labelledby="founder-proof-title">
   <div class="wrap">
     <div class="section-head center">
-      <span class="kicker">How This Actually Works</span>
-      <h2>Founders don't guess here. They ask, and they listen.</h2>
-      <p class="lede" style="margin:1rem auto 0;">Every Builder cohort runs on the same discipline: talk to real customers before you build anything. Founders leave their first few sessions with a list of people to call — not a to-do list for their product. By the middle of the program, they're making decisions from what those conversations actually told them, not from what they assumed going in. That's the whole method. No secret framework, no jargon. Ask the people who'd actually pay you. Listen for what they say and what they don't. Build the thing that survives that conversation.</p>
-      <p style="margin-top:1rem;color:var(--gray);font-style:italic;">This is what every cohort does, in every session — not a highlight reel from one founder, a discipline every founder here practices.</p>
+      <span class="kicker">Founder Perspectives</span>
+      <h2 id="founder-proof-title">Hear from founders.</h2>
     </div>
-    <div class="grid cols-3">
-      <div class="card">
-        <div style="aspect-ratio:16/9;border-radius:8px;overflow:hidden;margin-bottom:14px;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/lZ1q1jHbgco" title="GlowSens" frameborder="0" allowfullscreen></iframe></div>
+    <div class="grid cols-3 founder-stories">
+      <article class="card">
+        <div class="video-frame">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/lZ1q1jHbgco" title="GlowSens founder story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <h3>GlowSens</h3>
-        <p class="quote-line">"The building is great, but 90% of the value is the people — because the people are what make it valuable."</p>
-        <p style="font-size:0.85rem;color:var(--gray);">Noah Bergeron &amp; Stefan Arnold, Founders</p>
-      </div>
-      <div class="card">
-        <div style="aspect-ratio:16/9;border-radius:8px;overflow:hidden;margin-bottom:14px;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/IEixV3f1pME" title="Mallard Bay" frameborder="0" allowfullscreen></iframe></div>
+        <p class="quote-line">"The building is great, but 90% of the value is the people - because the people are what make it valuable."</p>
+        <p>Noah Bergeron and Stefan Arnold, Founders</p>
+      </article>
+      <article class="card">
+        <div class="video-frame">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/IEixV3f1pME" title="Mallard Bay founder story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <h3>Mallard Bay</h3>
-        <p style="color:var(--gray);">Hear how the founders talk about building through OM, in their own words.</p>
-      </div>
-      <div class="card">
-        <div style="aspect-ratio:16/9;border-radius:8px;overflow:hidden;margin-bottom:14px;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/KcOey2-8ttg" title="OM Founder Stories Vol. 3: Keepers" frameborder="0" allowfullscreen></iframe></div>
+        <p>Watch the founders describe their experience in their own words.</p>
+      </article>
+      <article class="card">
+        <div class="video-frame">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/KcOey2-8ttg" title="Keepers founder story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <h3>Keepers</h3>
-        <p style="color:var(--gray);">OM Founder Stories Vol. 3 — one founder's path through the program.</p>
-      </div>
+        <p>Watch this founder describe the company-building experience.</p>
+      </article>
     </div>
-    <p class="center" style="margin-top:2.2rem;font-family:var(--font-display);font-weight:600;letter-spacing:0.04em;color:var(--navy);">Builder founders don't pitch assumptions. They pitch evidence.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     SECTION 7 — COMMUNITY
-     "Who will I be around?" Functional value of community, not
-     "vibrant ecosystem" language. Mentor names/photos limited to
-     the intersection of the approved public mentor roster and
-     assets not flagged for consent review in mentors.html.
-     ============================================================ -->
-<section class="dark on-dark">
+<section class="dark on-dark center final-invitation" id="start-a-conversation" aria-labelledby="invitation-title">
   <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Who You'll Be Around</span>
-      <h2>The people make it work.</h2>
-      <p class="lede" style="margin-top:1rem;">Get the right people around the questions you're trying to answer: founders working through similar questions, people one or two stages ahead of you, mentors with relevant experience, partners who can help you test something real, and people who simply know things you don't yet.</p>
-    </div>
-    <div class="grid cols-2" style="margin-bottom:2.4rem;">
-      <div class="card">
-        <h3>Startup Circle</h3>
-        <p>Building a company is lonely work — Startup Circle is the antidote. It's OM's quarterly gathering for founders in the community to check in with each other. No agenda to perform, no application to fill out — OM staff send out invites ahead of each session.</p>
-      </div>
-      <div class="card">
-        <h3>You don't need to be technical</h3>
-        <p>Over 70% of the founders we work with don't have technical backgrounds. Most people here started exactly where you are.</p>
-      </div>
-    </div>
-    <div class="grid cols-4">
-      <div class="person">
-        <img src="assets/mentor-jaci-russo.jpg" alt="Jaci Russo">
-        <div class="name" style="color:#fff;">Jaci Russo</div>
-        <div class="role">Growth &amp; Marketing</div>
-      </div>
-      <div class="person">
-        <img src="assets/mentor-alex-lanclos.png" alt="Alex Lanclos">
-        <div class="name" style="color:#fff;">Alex Lanclos</div>
-        <div class="role">SaaS &amp; Development</div>
-      </div>
-      <div class="person">
-        <img src="assets/mentor-chris-kimmel.jpg" alt="Chris Kimmel">
-        <div class="name" style="color:#fff;">Chris Kimmel</div>
-        <div class="role">SaaS &amp; Development</div>
-      </div>
-      <div class="person">
-        <img src="assets/mentor-tom-cox.jpg" alt="Tom Cox">
-        <div class="name" style="color:#fff;">Tom Cox</div>
-        <div class="role">Growth &amp; Marketing</div>
-      </div>
-    </div>
-    <div class="cta-row center" style="margin-top:2rem;"><a class="btn btn-ghost" href="mentors.html">Meet the full mentor network</a></div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 8 — ADVANCEMENT
-     Founder journey per the founder-experience brief. Funding
-     appears only at the last stage, framed as fuel, not proof or
-     graduation. Reuses the existing 4-column grid component so it
-     collapses responsively for free.
-     ============================================================ -->
-<section class="dim">
-  <div class="wrap">
-    <div class="section-head center">
-      <h2>Where the work can take you.</h2>
-      <p class="lede" style="margin:1rem auto 0;">Progress comes from evidence, not simply building more. Here's the shape of it.</p>
-    </div>
-    <div class="grid cols-4">
-      <div class="card"><div class="tag">01 &middot; Idea</div><p>You've got a direction worth testing.</p></div>
-      <div class="card"><div class="tag">02 &middot; Discovery</div><p>You're talking to the people who'd actually pay for it.</p></div>
-      <div class="card"><div class="tag">03 &middot; Validation</div><p>You know what they need — not just what you assumed.</p></div>
-      <div class="card"><div class="tag">04 &middot; Prototype</div><p>You've got something real for people to react to.</p></div>
-      <div class="card"><div class="tag">05 &middot; Launch</div><p>It's in front of customers, not just in your head.</p></div>
-      <div class="card"><div class="tag">06 &middot; Traction</div><p>People are coming back, paying, or telling someone else.</p></div>
-      <div class="card"><div class="tag">07 &middot; Momentum</div><p>You can point to a pattern, not just a good week.</p></div>
-      <div class="card"><div class="tag">08 &middot; Growth</div><p>You know what to scale — and what it would take to fund it.</p></div>
-    </div>
-    <p class="center" style="margin-top:2.2rem;color:var(--gray);max-width:44rem;margin-left:auto;margin-right:auto;">Funding can help at any of these stages. It's fuel for what's already working — never the proof that it works, and never the finish line.</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 9 — LOCAL / PRACTICAL ACCESS
-     Answers "where" and practical "when" without those words as
-     headings. Facts sourced from contact.html / membership.html
-     in this same repo. Office hours are shown on the existing
-     contact page but are NOT yet in the canonical claims registry
-     — flagged in the report below, not hidden.
-     ============================================================ -->
-<section>
-  <div class="wrap split">
-    <div>
-      <span class="kicker">Visit</span>
-      <h2>Come see us.</h2>
-      <p class="lede" style="margin-top:1rem;">314 Jefferson St, Lafayette, LA 70501 — in the heart of Downtown.</p>
-      <div class="cta-row" style="margin-top:1.4rem;">
-        <a class="btn btn-navy" href="tel:+13377694085">(337) 769-4085</a>
-        <a class="btn btn-ghost-navy" href="mailto:info@opportunitymachine.org">info@opportunitymachine.org</a>
-      </div>
-    </div>
-    <div class="grid" style="gap:16px;">
-      <div class="card"><h3>Office Hours</h3><p>Monday – Friday, 9:00 AM – 5:00 PM CST.</p></div>
-      <div class="card"><h3>Workspace</h3><p>Flexible coworking space, plus bookable conference and training rooms, in Downtown Lafayette.</p></div>
-      <div class="card"><h3>1:1 Coaching &amp; Mentor Access</h3><p>Coaching and mentor time are available to OM members — reach out and we'll walk you through what's available to you right now.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 10 — FINAL CONVERSATION CTA
-     Single primary CTA. No competing "Apply Now" button.
-     ============================================================ -->
-<section class="dark on-dark center">
-  <div class="wrap">
-    <h2>Let's talk about what you're building.</h2>
-    <p class="lede" style="margin:1rem auto 0;">Tell us what you're working on and where you're trying to go. We'll help you figure out the next step — a program, a mentor, an introduction, or just a good next conversation.</p>
+    <span class="kicker">Your Next Step</span>
+    <h2 id="invitation-title">Tell us what you're building.</h2>
+    <p class="no-equity-reminder">OM takes no equity.</p>
     <div class="cta-row center">
-      <a class="btn btn-blue" href="contact.html" data-analytics="homepage_final_book_conversation">Book a 20-minute conversation &rarr;</a>
+      <a class="btn btn-blue" href="contact.html" data-analytics="homepage_final_book_call" data-destination-status="interim">Book a call</a>
     </div>
   </div>
 </section>
@@ -363,7 +188,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Opportunity Machine. Internal replica — not for public use.</span>
+      <span>© 2026 Opportunity Machine. Internal replica - not for public use.</span>
       <span><a href="#">Privacy Policy</a> · <a href="#">Cookies Policy</a></span>
     </div>
   </div>

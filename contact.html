@@ -10,13 +10,13 @@
 </head>
 <body>
 
-<div class="replica-banner">INTERNAL REPLICA — form is display-only (no backend wired). Wire to the JotForm, Calendly, or a form handler before use.</div>
+<div class="replica-banner">OM WORKING MOCK SITE 2.0 - INTERNAL CANDIDATE. This form is display-only. The scheduling destination and follow-up process are still being confirmed.</div>
 
 <header class="site-header">
   <div class="nav-bar">
     <a class="brand" href="index.html"><img src="assets/om-logo-reversed.png" alt="Opportunity Machine"></a>
-    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="site-nav">
       <li><a href="about.html">About OM</a></li>
       <li><a href="builder-program.html">Builder Program</a></li>
       <li><a href="membership.html">Membership</a></li>
@@ -26,7 +26,7 @@
       <li><a href="ecosystem.html">Ecosystem</a></li>
       <li><a href="talent.html">Talent</a></li>
       <li><a href="alumni.html">Alumni</a></li>
-      <li><a class="nav-cta" href="contact.html">Schedule Now</a></li>
+      <li><a class="nav-cta" href="contact.html" data-destination-status="interim">Book a call</a></li>
     </ul>
   </div>
 </header>
@@ -36,8 +36,8 @@
 <section class="hero on-dark">
   <div class="wrap">
     <span class="kicker">Get Started</span>
-    <h1>Schedule an<br>Interest Call.</h1>
-    <p class="lede">The interest call is framed as a conversation, not a test. We want to understand where you are and how OM can help you build momentum.</p>
+    <h1>Start a<br>Conversation.</h1>
+    <p class="lede">Tell us what you're building and the question in front of you. This first conversation helps OM understand where you are. Program access and admission decisions happen separately.</p>
   </div>
 </section>
 
@@ -47,9 +47,12 @@
       <div class="item"><h3>Email Us</h3><p><a href="mailto:info@opportunitymachine.org">info@opportunitymachine.org</a></p></div>
       <div class="item"><h3>Call Us</h3><p><a href="tel:+13377694085">(337) 769-4085</a></p></div>
       <div class="item"><h3>Visit Us</h3><p>314 Jefferson St, Lafayette, LA 70501</p></div>
-      <div class="item"><h3>Office Hours</h3><p>Monday – Friday<br>9:00 AM – 5:00 PM CST</p></div>
     </div>
-    <form action="#" method="get" onsubmit="alert('Replica build — form not wired to a backend yet.'); return false;">
+    <form action="#" method="get" aria-describedby="booking-policy booking-status" onsubmit="alert('Replica build - form not wired to a backend yet.'); return false;">
+      <div class="policy-note" id="booking-policy">
+        <strong>OM takes no equity.</strong>
+      </div>
+      <p class="mock-note" id="booking-status">Mock-site note: submitting this form does not book a meeting. OM's final scheduling link and confirmation process are Unknown.</p>
       <div class="field-row">
         <div class="field"><label for="fname">First name</label><input id="fname" name="fname" type="text"></div>
         <div class="field"><label for="lname">Last name</label><input id="lname" name="lname" type="text"></div>
@@ -71,7 +74,7 @@
         </select>
       </div>
       <div class="field"><label for="msg">Message *</label><textarea id="msg" name="msg" required></textarea></div>
-      <button class="btn btn-blue" type="submit">Submit</button>
+      <button class="btn btn-blue" type="submit">Send request</button>
     </form>
   </div>
 </section>
