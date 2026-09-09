@@ -301,7 +301,7 @@ mentors (current)
 ├── hero  h1 "The Mentor Ecosystem."
 ├── Mentor of the Month
 │   └── "[Mentor Name]"                          [labelled placeholder]
-├── Our Mentor Lineup                            [41 profile links vs 20 approved]
+├── Our Mentor Lineup                            [26 in the mock, 41 on Wix, 20 approved]
 └── "Ready to meet your mentors?"                [implies access]
 ```
 
@@ -330,7 +330,7 @@ mentors
 | MENT-01 | `The Mentor Ecosystem.` | Remove | Names a system, not a reader benefit. |
 | MENT-03 | Mentor page: mentorship is strictly for members who completed Builder 1.0. Membership page: members may request one-on-one mentor meetings. | Blocked | Tyler confirms one governing rule. Both statements cannot stand. |
 | MENT-03 | `guarded`, `strictly`, `pre-seed success` | Remove | Control and outcome language in place of a process explanation. |
-| MENT-05 | 41 live profiles | Remove | Publish the approved 20 only. The other 21 need clearance. |
+| MENT-05 | Published profiles | Remove | **26 in this mock**, 41 on the Wix site, against an approved roster of 20. Publish the approved 20 only; six need clearance here and twenty-one there. |
 | MENT-07 | `Ready to meet your mentors?` | Remove | Promises access that is unresolved. |
 
 ---
@@ -438,7 +438,7 @@ community (current)                    events (current)
 │   ├── Give-First Culture             ├── On the Calendar
 │   ├── High-Trust Engagement          │   └── Elevate Pitch Competition
 │   └── Direct Feedback                ├── Past Event Benchmarks
-├── The Community Model                │   └── 400+ / $40K+ / 92%   [unsupported]
+├── The Community Model                │   └── "Benchmarks pending sourcing" [correct]
 │   └── Founders/Mentors/              └── "Ready to build your momentum?"
 │       Partners/Alumni
 └── "Ready to build your momentum?"
@@ -478,10 +478,10 @@ community-and-events
 | COMM-03 | `High-Trust Engagement`, `non-negotiable` | Remove | Guarded tone. Describe what people actually do. |
 | COMM-03b | `OM is not here to hand out funding; we are here to build the viability that makes funding possible.` | Blocked | Rendered as an unattributed blockquote. It is OM speaking rather than a founder, but quotation styling implies a speaker, and it asserts what OM does and does not do without a source record. De-quote it as plain institutional copy and clear the claim, or remove it. |
 | COMM-04 | Startup Circle next date | Unknown | Format is approved. Do not print a date until one exists. |
-| EVENT-01 | `TBD` event content | Remove | No placeholder ships. |
-| EVENT-01 | `400+`, `$40K+`, `92%` | Remove | No period, population, definition, or source. |
+| EVENT-01 | `TBD` event content | **Wix only** | Not in this mock. The only `TBD` string here is `JTBD`, a framework name in a Builder session title. |
+| EVENT-01 | `400+`, `$40K+`, `92%` | **Wix only** | Not in this mock. `events.html` renders "Benchmarks pending sourcing" and requires an as-of date. This is the pattern the other pages should copy. |
 | EVENT-03 | Innovate South | Approved with revision | Present as past. Do not list as upcoming. |
-| EVENT-04 | `Get Notified` | Blocked | Currently loops to the homepage. Connect it or remove it. |
+| EVENT-04 | `Get Notified` | **Wix only** | No such control exists in this mock. Build it with a real destination, or leave it out. |
 
 ---
 
@@ -646,6 +646,14 @@ Fourteen lines need no outside confirmation. They are wording choices only.
 ## Measurements
 
 No analytics or search baseline was reviewed. **No measurements found.**
+
+## Mock state versus Wix state
+
+`PAGE-TREES-V2.md` originally imported the 2026-09-09 brief's diagnosis of the **Wix site** and presented parts of it as the state of this **mock**. Corrected above and recorded as `OM-V2-M0-004`. The mock is in better shape than the first draft of this document implied: it carries its own claim-flag review aid, toggled with the `c` key, with nine flagged blocks tagged `Stat pending sourcing`, `Impact numbers pending`, `Benchmarks pending sourcing` and `Placeholder, awaiting real spotlight`.
+
+Five registry claims marked `internal_only` or `remove_until_verified` were checked against the mock and **none appears here**: `claim.startup-count-80-plus` (80+ startups since 2009), `claim.cohort-spring26-metric` (nine companies, 55 customer conversations), `claim.keepers-intern-hires`, `claim.blue-partner-company` and `claim.mixjingle-event`.
+
+Read every `Current tree` block as describing the mock unless a row says **Wix only**.
 
 ## Approval and gate status
 

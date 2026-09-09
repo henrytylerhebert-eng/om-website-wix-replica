@@ -1,0 +1,82 @@
+{
+  "page_id": "om-about-v2",
+  "phase": "draft",
+  "passed": true,
+  "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
+  "error_count": 0,
+  "warning_count": 14,
+  "page_content_sha256": "5febea179ea0a884327ebdae8efddb5c2b34996081dcbfaafcaa9632a22bc00f",
+  "findings": [
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_h1 is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_audience is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_mechanism is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_regional is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_history is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_people is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_partners is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section about_next is not approved."
+    },
+    {
+      "code": "CLAIM_APPROVAL",
+      "severity": "warning",
+      "message": "OM-PLACE-001: exact public claim is not approved."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_desktop: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_mobile: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "accessibility: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "live_destinations: not completed."
+    },
+    {
+      "code": "PAGE_APPROVAL",
+      "severity": "warning",
+      "message": "Exact-version page approval is missing."
+    }
+  ],
+  "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."
+}

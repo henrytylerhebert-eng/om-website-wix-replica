@@ -1,0 +1,62 @@
+{
+  "page_id": "om-clarity-check-v2",
+  "phase": "draft",
+  "passed": true,
+  "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
+  "error_count": 0,
+  "warning_count": 10,
+  "page_content_sha256": "8663f9fb153af46c2b2bf9a22566d50c07a373b704d5fd2f6a29e6b91707c978",
+  "findings": [
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section clar_h1 is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section clar_what is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section clar_privacy is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section clar_result is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section clar_next is not approved."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_desktop: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_mobile: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "accessibility: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "live_destinations: not completed."
+    },
+    {
+      "code": "PAGE_APPROVAL",
+      "severity": "warning",
+      "message": "Exact-version page approval is missing."
+    }
+  ],
+  "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."
+}

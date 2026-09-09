@@ -1,0 +1,84 @@
+{
+  "run_id": "om-site-v2-full-suite-2026-09-09",
+  "date": "2026-09-09",
+  "mode": "run_every_suite_skill",
+  "canon_version": "1.2.0",
+  "source_ids": ["S-USER-APPROVAL-0909", "S-CLAIMS-REGISTRY", "S-USER-STRATEGY", "S-USER-ADJUSTMENTS", "S-JULY-BRIEF", "S-BRAND", "S-GEO", "S-PEERS-A", "S-PEERS-B", "S-VISUAL"],
+  "skills_run": {
+    "om-website-canon": "read; two sources added to the registry",
+    "om-page-architect": "eleven new page contracts, twelve total",
+    "om-website-strategist": "qa.py at draft on all twelve contracts, and at release on the homepage",
+    "om-improvement-loop": "five records; one material learning recorded",
+    "om-proof-auditor": "claim ledger across all twelve pages",
+    "om-testimonial-selector": "no eligible record on any page; none proposed",
+    "om-proof-library": "bank reconciled; three context separations preserved",
+    "om-message-coverage-auditor": "coverage matrix across twelve pages; four FAILs",
+    "om-visitor-router": "five route records plus two missing audience routes",
+    "om-journey-auditor": "synthetic desk review of five tasks",
+    "om-seo-geo-architect": "title, H1 and description sets for twelve pages; all search questions labelled hypotheses",
+    "om-opportunity-audit": "nine findings with competing explanations; three no-material-change items",
+    "om-positioning-guard": "seven checks on the fourteen wording decisions and on every page",
+    "om-founder-story-builder": "story model applied to three approved videos; none buildable",
+    "om-web-copy-builder": "not run beyond Home and Contact; its input is an approved contract and eleven are pending",
+    "om-peer-pattern-finder": "run upstream in the brief; not re-run, no new pattern problem arose"
+  },
+  "files_changed": [
+    "planning/v2/PROOF-LEDGER.md",
+    "planning/v2/SITE-AUDIT-2026-09-09.md",
+    "planning/v2/PRE-DECISION-AUDIT.md",
+    "planning/v2/PAGE-TREES-V2.md",
+    "planning/v2/page-about-v2.json",
+    "planning/v2/page-technical-support-v2.json",
+    "planning/v2/page-builder-v2.json",
+    "planning/v2/page-mentors-v2.json",
+    "planning/v2/page-membership-v2.json",
+    "planning/v2/page-founder-stories-v2.json",
+    "planning/v2/page-community-events-v2.json",
+    "planning/v2/page-ecosystem-v2.json",
+    "planning/v2/page-contact-v2.json",
+    "planning/v2/page-impact-acadiana-v2.json",
+    "planning/v2/page-clarity-check-v2.json",
+    "planning/v2/improvement-record-OM-V2-M0-004.json",
+    "planning/v2/run-receipt-2026-09-09-full-suite.json"
+  ],
+  "files_changed_outside_repo": [
+    "OM_Website_Skill_Suite_v1.2.0 references/sources.json, added S-CLAIMS-REGISTRY; backup at sources.json.bak-20260909"
+  ],
+  "protected_content_changed": false,
+  "qa_result": {
+    "all_twelve_contracts": "DRAFT_CHECKS_PASS_WITH_WARNINGS, 0 errors each",
+    "warning_range": "4 on the approved homepage, 9 to 14 on the eleven new drafts",
+    "warning_cause": "unapproved sections, pending page approval, and manual reviews not yet run on the eleven"
+  },
+  "material_learning": "The page trees imported the brief's diagnosis of the live Wix site as if it described this mock, in five places. The mock's claim discipline is materially better than the trees implied: it carries its own claim-flag review aid with nine flagged blocks, its Events page withholds metrics correctly behind a pending-sourcing flag, and none of the five registry claims marked internal_only or remove_until_verified appears in it. Two artifacts describing two different sites need per-row labelling, not merged findings.",
+  "improvement_record_ids": ["OM-V2-M1-001", "OM-V2-M1-003", "OM-V2-M2-001", "OM-V2-M2-002", "OM-V2-M0-004"],
+  "highest_value_new_findings": [
+    "The two protected messages appear on two of twelve pages. Builder and Membership both carry participation actions with neither message anywhere.",
+    "alumni.html asserts its testimonials are validated. Zero of fifteen records have a confirmed source or granted permission.",
+    "No page addresses partners, funders or officials in its opening, and no route reaches them.",
+    "Every route ends in the same conversation with no stated follow-up.",
+    "Clarity Check is fully built and reachable only by direct URL.",
+    "clarity-check.html was never claim-audited and its privacy handling for submitted answers is Unknown."
+  ],
+  "remaining_blockers": [
+    "Canonical Book a call destination and post-click process",
+    "Colour values in OM-V2-M2-001",
+    "One mentor-access rule",
+    "Membership price, hours, eligibility, and relationship to programs",
+    "Builder cost, dates, session titles",
+    "Publication permission for any testimonial",
+    "Records and permissions for six company and founder claims",
+    "Approved economic-development paragraph",
+    "Whether geography limits eligibility"
+  ],
+  "checks_not_run": [
+    "rendered inspection of any page other than Home and Contact",
+    "participant observation",
+    "query or interview data for any search hypothesis",
+    "crawl and index verification",
+    "live form submission",
+    "assistive-technology walkthrough",
+    "claim audit of the clarity-check interactive logic"
+  ],
+  "live_website_changed": false
+}

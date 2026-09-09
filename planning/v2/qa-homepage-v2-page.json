@@ -1,0 +1,32 @@
+{
+  "page_id": "om-homepage-v2",
+  "phase": "draft",
+  "passed": true,
+  "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
+  "error_count": 0,
+  "warning_count": 4,
+  "page_content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6",
+  "findings": [
+    {
+      "code": "HERO_DESTINATION",
+      "severity": "warning",
+      "message": "Hero booking destination is missing."
+    },
+    {
+      "code": "LINK_DESTINATION",
+      "severity": "warning",
+      "message": "primary-booking: destination unknown or placeholder."
+    },
+    {
+      "code": "LINK_APPROVAL",
+      "severity": "warning",
+      "message": "primary-booking: destination is not approved."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "accessibility: not completed."
+    }
+  ],
+  "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."
+}

@@ -1,0 +1,82 @@
+{
+  "page_id": "om-ecosystem-v2",
+  "phase": "draft",
+  "passed": true,
+  "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
+  "error_count": 0,
+  "warning_count": 14,
+  "page_content_sha256": "28d8ca64eb62dcee018de750a55e369f22109ff6c3d6119da5f8b88fc150e535",
+  "findings": [
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_h1 is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_orient is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_routes is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_fit is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_links is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_partners is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section eco_companies is not approved."
+    },
+    {
+      "code": "CLAIM_APPROVAL",
+      "severity": "warning",
+      "message": "OM-LAIO-001: exact public claim is not approved."
+    },
+    {
+      "code": "CLAIM_APPROVAL",
+      "severity": "warning",
+      "message": "OM-PLACE-001: exact public claim is not approved."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_desktop: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_mobile: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "accessibility: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "live_destinations: not completed."
+    },
+    {
+      "code": "PAGE_APPROVAL",
+      "severity": "warning",
+      "message": "Exact-version page approval is missing."
+    }
+  ],
+  "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."
+}

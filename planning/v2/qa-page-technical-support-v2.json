@@ -1,0 +1,57 @@
+{
+  "page_id": "om-technical-support-v2",
+  "phase": "draft",
+  "passed": true,
+  "status": "DRAFT_CHECKS_PASS_WITH_WARNINGS",
+  "error_count": 0,
+  "warning_count": 9,
+  "page_content_sha256": "0f3e4b6be358844870ae3d1449e31b3f227ea8e0ca09816ee384f9af7a1a5ce8",
+  "findings": [
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section tech_h1 is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section tech_compare is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section tech_paths is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "warning",
+      "message": "Section tech_action is not approved."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_desktop: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "rendered_mobile: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "accessibility: not completed."
+    },
+    {
+      "code": "MANUAL_REVIEW",
+      "severity": "warning",
+      "message": "live_destinations: not completed."
+    },
+    {
+      "code": "PAGE_APPROVAL",
+      "severity": "warning",
+      "message": "Exact-version page approval is missing."
+    }
+  ],
+  "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."
+}

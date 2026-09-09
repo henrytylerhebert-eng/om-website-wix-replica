@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.2.0",
+  "id": "om-about-v2",
+  "page_type": "about",
+  "status": "draft",
+  "goal": "Credibility",
+  "canon_version": "1.2.0",
+  "primary_audience": "Partners, funders, community stakeholders and prospective mentors, with founders seeking institutional trust second.",
+  "primary_question": "What is Opportunity Machine, whom does it serve, and why does it exist?",
+  "supporting_questions": [
+    "What does OM actually do?",
+    "Who is it for?",
+    "How does it relate to Acadiana?",
+    "Who runs it?",
+    "Where do I go next?"
+  ],
+  "input_basis": "PAGE-TREES-V2.md, PROOF-LEDGER.md and SITE-AUDIT-2026-09-09.md on this branch; the page-by-page Wix brief dated 2026-09-09; PUBLIC-CLAIMS-REGISTRY.md via S-CLAIMS-REGISTRY; OM Website Skill Suite v1.2.0 canon.",
+  "target": {
+    "environment": "planning_only",
+    "repository": "https://github.com/henrytylerhebert-eng/om-website-wix-replica",
+    "branch": "codex/om/mock-site-v2",
+    "url": null
+  },
+  "hero": null,
+  "sections": [
+    {
+      "id": "about_h1",
+      "purpose": "Name the page's promise to an institutional reader.",
+      "headline": "Built to help founders move forward.",
+      "body": "",
+      "origin": "new",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 1,
+      "approval_status": "pending",
+      "notes": "ABOUT-01. Proposed. The positioning guard notes this speaks only to founders while the primary audience is institutional. One of the two has to move."
+    },
+    {
+      "id": "about_definition",
+      "purpose": "Define OM plainly before any history.",
+      "headline": "What Opportunity Machine is",
+      "body": "Opportunity Machine is an economic-development organization. OM takes no equity.",
+      "origin": "new",
+      "claim_ids": [
+        "OM-ECON-001",
+        "OM-EQUITY-001"
+      ],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 2,
+      "approval_status": "approved",
+      "notes": "Message coverage FAIL corrected: both required messages currently appear nowhere on this page."
+    },
+    {
+      "id": "about_audience",
+      "purpose": "State whom OM supports.",
+      "headline": "Who OM is designed to support",
+      "body": "Public copy is blocked until the responsible owner confirms the underlying facts.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 3,
+      "approval_status": "blocked",
+      "notes": "ABOUT-03. Adding a geography phrase would create a second, narrower version of the approved OM-AUDIENCE-001 and needs its own approval."
+    },
+    {
+      "id": "about_mechanism",
+      "purpose": "Explain how support works.",
+      "headline": "How support works",
+      "body": "Public copy is blocked until the responsible owner confirms the underlying facts.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 4,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "about_regional",
+      "purpose": "Connect founder support to regional purpose without asserting a measured effect.",
+      "headline": "Why this work matters to Acadiana",
+      "body": "Public copy is blocked until the responsible owner confirms the underlying facts.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "medium",
+      "mobile_order": 5,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "about_history",
+      "purpose": "Give founding context.",
+      "headline": "History and founding context",
+      "body": "Present on the page today. Remove premier, elite and proven frameworks.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "medium",
+      "mobile_order": 6,
+      "approval_status": "pending",
+      "notes": "Proof ledger: three prestige and proof words with no comparative evidence."
+    },
+    {
+      "id": "about_people",
+      "purpose": "Staff and governance, current records only.",
+      "headline": "Staff and governance",
+      "body": "Names are approved public. Two titles are unconfirmed.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "medium",
+      "mobile_order": 7,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "about_partners",
+      "purpose": "Partner roles with verified contribution labels.",
+      "headline": "Partners",
+      "body": "Public copy is blocked until the responsible owner confirms the underlying facts.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "low",
+      "mobile_order": 8,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "about_next",
+      "purpose": "Route to founder support, partnership or contact.",
+      "headline": "Where to go next",
+      "body": "",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 9,
+      "approval_status": "pending"
+    }
+  ],
+  "claims": [
+    {
+      "id": "OM-ECON-001",
+      "statement": "Opportunity Machine is an economic-development organization.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Establishes no government-agency status, public-funding share, tax treatment, or measured regional effect."
+    },
+    {
+      "id": "OM-EQUITY-001",
+      "statement": "OM takes no equity.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Establishes no absence of fees, conditions, contracts, IP terms, funding availability, or eligibility."
+    },
+    {
+      "id": "OM-PLACE-001",
+      "statement": "OM is based in Downtown Lafayette, Louisiana.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-BRAND",
+        "S-JULY-BRIEF"
+      ],
+      "support_status": "source_supported",
+      "approval_status": "pending",
+      "publication_status": "pending",
+      "limitations": "Location only. Establishes no geographic eligibility limit and no statewide service claim."
+    }
+  ],
+  "disclosures": {},
+  "links": [],
+  "metrics": [],
+  "testimonial_uses": [],
+  "testimonial_use_basis": "None. All 15 records in the suite testimonial bank carry unknown publication permission, unknown original source, ungranted editing permission and pending publication approval.",
+  "unknowns": [
+    "Exact titles for Katherine Nebel and Theresa Nunez",
+    "Approved economic-development boilerplate",
+    "Partner list, contribution labels and logo permissions",
+    "Whether geography limits eligibility"
+  ],
+  "primary_action": "See how OM supports founders",
+  "maintenance_owner": "Tyler Hebert",
+  "manual_reviews": {
+    "claim_semantics": "pass",
+    "quote_context": "not_applicable_with_reason",
+    "copy_style": "pass",
+    "rendered_desktop": "not_run",
+    "rendered_mobile": "not_run",
+    "accessibility": "not_run",
+    "live_destinations": "not_run"
+  },
+  "page_approval": {
+    "status": "pending",
+    "by": null,
+    "source_id": null,
+    "content_sha256": null
+  },
+  "publication_requested": false,
+  "content_sha256_unapproved": "50f180d15eadce01e5ee29060d6a2b1bfafa88c702028eaf9d051f7a90ed6d0f"
+}

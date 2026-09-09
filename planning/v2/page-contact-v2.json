@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.2.0",
+  "id": "om-contact-v2",
+  "page_type": "booking",
+  "status": "draft",
+  "goal": "Access",
+  "canon_version": "1.2.0",
+  "primary_audience": "Founders unsure where to begin, with mentors, partners and media second.",
+  "primary_question": "How do I reach OM about my situation, and what happens after I do?",
+  "supporting_questions": [
+    "Who should I talk to?",
+    "What is this conversation?",
+    "Is this an application?",
+    "When will I hear back?"
+  ],
+  "input_basis": "PAGE-TREES-V2.md, PROOF-LEDGER.md and SITE-AUDIT-2026-09-09.md on this branch; the page-by-page Wix brief dated 2026-09-09; PUBLIC-CLAIMS-REGISTRY.md via S-CLAIMS-REGISTRY; OM Website Skill Suite v1.2.0 canon.",
+  "target": {
+    "environment": "planning_only",
+    "repository": "https://github.com/henrytylerhebert-eng/om-website-wix-replica",
+    "branch": "codex/om/mock-site-v2",
+    "url": null
+  },
+  "hero": null,
+  "sections": [
+    {
+      "id": "cont_h1",
+      "purpose": "Invite plainly.",
+      "headline": "Start a Conversation.",
+      "body": "",
+      "origin": "new",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 1,
+      "approval_status": "pending",
+      "notes": "CONT-01. Built. Competes with the homepage closing and the brief's draft 'Tell us what you're working on.' Assign one sentence per page."
+    },
+    {
+      "id": "cont_invite",
+      "purpose": "Set expectations without promising admission.",
+      "headline": "What this is",
+      "body": "Program access and admission decisions happen separately.",
+      "origin": "new",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 2,
+      "approval_status": "pending",
+      "notes": "Built."
+    },
+    {
+      "id": "cont_selector",
+      "purpose": "Route by reason for contact.",
+      "headline": "What are you reaching out about?",
+      "body": "Founder support, program, technical support, workspace, mentor interest, partnership, media or general.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 3,
+      "approval_status": "pending",
+      "notes": "CONT-03. Not built. Seven reasons proposed."
+    },
+    {
+      "id": "cont_form",
+      "purpose": "A short form matched to the selected intent.",
+      "headline": "Tell us about it",
+      "body": "One general form today with six labelled fields.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 4,
+      "approval_status": "pending"
+    },
+    {
+      "id": "cont_equity",
+      "purpose": "State the policy before submission.",
+      "headline": "Before you send",
+      "body": "OM takes no equity.",
+      "origin": "internal_note",
+      "claim_ids": [
+        "OM-EQUITY-001"
+      ],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 5,
+      "approval_status": "approved",
+      "notes": "Built and verified to precede the submit control in document order."
+    },
+    {
+      "id": "cont_next",
+      "purpose": "State who responds and when.",
+      "headline": "What happens next",
+      "body": "Public copy is blocked until the responsible owner confirms the underlying facts.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 6,
+      "approval_status": "blocked",
+      "notes": "CONT-07. No unverified response-time promise is permitted."
+    },
+    {
+      "id": "cont_identity",
+      "purpose": "Approved contact identity.",
+      "headline": "Reach us directly",
+      "body": "Address, phone and social identity, approved after a currentness check.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "medium",
+      "mobile_order": 7,
+      "approval_status": "pending"
+    }
+  ],
+  "claims": [
+    {
+      "id": "OM-EQUITY-001",
+      "statement": "OM takes no equity.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Establishes no absence of fees, conditions, contracts, IP terms, funding availability, or eligibility."
+    }
+  ],
+  "disclosures": {},
+  "links": [],
+  "metrics": [],
+  "testimonial_uses": [],
+  "testimonial_use_basis": "None. All 15 records in the suite testimonial bank carry unknown publication permission, unknown original source, ungranted editing permission and pending publication approval.",
+  "unknowns": [
+    "Scheduling versus form workflow",
+    "Response owner and realistic timing",
+    "Form destination, privacy handling and notification routing"
+  ],
+  "primary_action": "Start a conversation",
+  "maintenance_owner": "Tyler Hebert",
+  "manual_reviews": {
+    "claim_semantics": "pass",
+    "quote_context": "not_applicable_with_reason",
+    "copy_style": "pass",
+    "rendered_desktop": "not_run",
+    "rendered_mobile": "not_run",
+    "accessibility": "not_run",
+    "live_destinations": "not_run"
+  },
+  "page_approval": {
+    "status": "pending",
+    "by": null,
+    "source_id": null,
+    "content_sha256": null
+  },
+  "publication_requested": false,
+  "content_sha256_unapproved": "674cdd38efbec8b987b2994643da5511568aa9c8b120732c05337a1bd5b9bcad"
+}

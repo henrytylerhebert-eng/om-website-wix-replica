@@ -1,0 +1,23 @@
+{
+  "id": "OM-V2-M0-004",
+  "status": "applied",
+  "change_class": "M0",
+  "observation": "PAGE-TREES-V2.md imported the 2026-09-09 page-by-page brief's diagnosis of the live Wix site and presented parts of it as the state of this mock repository. Four rows were wrong: Events was said to display 400+, $40K+ and 92%, which the mock withholds behind \"Benchmarks pending sourcing\" with an as-of-date requirement; Events was said to carry TBD content, where the only TBD string is JTBD, a framework name in a Builder session title; a Get Notified control was said to loop to the homepage, and no such control exists here; and Mentors was said to publish 41 profiles, where the mock publishes 26. A fifth row overstated the Mentors spotlight as a silent live placeholder when it is self-labelled with a dashed border and a \"Placeholder, awaiting real spotlight\" tag.",
+  "evidence_locator": [
+    "events.html, Past Event Benchmarks section",
+    "builder-program.html:127 JTBD session title",
+    "mentors.html, 26 mentor-card blocks",
+    "mentors.html:55 placeholder tag",
+    "PAGE-TREES-V2.md before this correction",
+    "OM-WIX-SITE-PAGE-BY-PAGE-CONTENT-BRIEF-2026-09-09.md sections 4 Events and Mentors"
+  ],
+  "affected_file_or_page": "planning/v2/PAGE-TREES-V2.md and the published language-workshop artifact",
+  "why_it_matters": "The trees are the input to twelve page contracts and to fourteen wording decisions. Rows that describe a different artifact send work at defects that are already fixed here, and they understate the mock's actual claim discipline, which is good: the mock carries its own claim-flag review aid with nine flagged blocks and none of the five registry claims marked internal_only or remove_until_verified.",
+  "competing_explanation": "The brief is the authoritative diagnosis of the site OM actually publishes, and the mock exists to become that site, so importing its findings is reasonable. The error is not in using the brief but in not labelling which artifact each row describes. Both states matter and they are not the same state.",
+  "applied_change": "Every corrected row is now labelled Wix only. A new section states the mock-versus-Wix rule, records the nine claim flags, and lists the five registry claims verified absent from the mock. The Mentors placeholder row now states that it labels itself. PROOF-LEDGER.md opens with the same correction. The published artifact carries the corrected characterisation.",
+  "smallest_useful_test": "For each remaining Current tree row, grep the mock for the cited string before treating it as a mock defect.",
+  "decision_criterion": "No row in the trees asserts a mock defect that a grep of this repository cannot reproduce.",
+  "owner": "Tyler Hebert",
+  "approval_status": "applied_mechanical_correction",
+  "rollback": "git show 5f98563 -- planning/v2/PAGE-TREES-V2.md holds the uncorrected version."
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.2.0",
+  "id": "om-mentors-v2",
+  "page_type": "program",
+  "status": "draft",
+  "goal": "Access",
+  "canon_version": "1.2.0",
+  "primary_audience": "Founders seeking relevant experience, with prospective mentors second.",
+  "primary_question": "What does mentor support mean here, and can I get it?",
+  "supporting_questions": [
+    "What can a mentor help me with?",
+    "Am I eligible?",
+    "How do I request one?",
+    "How does matching work?",
+    "How do I become a mentor?"
+  ],
+  "input_basis": "PAGE-TREES-V2.md, PROOF-LEDGER.md and SITE-AUDIT-2026-09-09.md on this branch; the page-by-page Wix brief dated 2026-09-09; PUBLIC-CLAIMS-REGISTRY.md via S-CLAIMS-REGISTRY; OM Website Skill Suite v1.2.0 canon.",
+  "target": {
+    "environment": "planning_only",
+    "repository": "https://github.com/henrytylerhebert-eng/om-website-wix-replica",
+    "branch": "codex/om/mock-site-v2",
+    "url": null
+  },
+  "hero": null,
+  "sections": [
+    {
+      "id": "mentors_h1",
+      "purpose": "Lead with the founder's challenge.",
+      "headline": "Bring a challenge. Connect with relevant experience.",
+      "body": "",
+      "origin": "new",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 1,
+      "approval_status": "pending",
+      "notes": "MENT-01. Reconciliation note: 'Connect with relevant experience' promises the access rule that MENT-03 has not settled."
+    },
+    {
+      "id": "mentors_what",
+      "purpose": "What mentors help a founder think through.",
+      "headline": "What mentors help with",
+      "body": "",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 2,
+      "approval_status": "pending"
+    },
+    {
+      "id": "mentors_access",
+      "purpose": "How access actually works.",
+      "headline": "How access works",
+      "body": "DISPUTED. The Mentors page says mentorship is strictly for members who completed Builder 1.0. The Membership page says members may request one-on-one mentor meetings. Both cannot stand.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 3,
+      "approval_status": "blocked",
+      "notes": "MENT-03. Release blocker. Remove guarded, strictly and pre-seed success when the rule is written."
+    },
+    {
+      "id": "mentors_filters",
+      "purpose": "Organise expertise around founder questions.",
+      "headline": "Find relevant experience",
+      "body": "",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "medium",
+      "mobile_order": 4,
+      "approval_status": "pending"
+    },
+    {
+      "id": "mentors_roster",
+      "purpose": "Publish only the approved roster.",
+      "headline": "The mentors",
+      "body": "Approved roster is 20. The mock publishes 26. Six need clearance or removal.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 5,
+      "approval_status": "blocked"
+    },
+    {
+      "id": "mentors_spotlight",
+      "purpose": "Remove the placeholder.",
+      "headline": "Mentor spotlight",
+      "body": "Self-labelled placeholder, awaiting real spotlight. Must not reach a public build.",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "low",
+      "mobile_order": 6,
+      "approval_status": "blocked",
+      "notes": "MENT-00."
+    },
+    {
+      "id": "mentors_become",
+      "purpose": "Prospective-mentor pathway with contribution expectations.",
+      "headline": "Become a mentor",
+      "body": "",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "medium",
+      "mobile_order": 7,
+      "approval_status": "pending"
+    },
+    {
+      "id": "mentors_action",
+      "purpose": "One next step that does not promise access.",
+      "headline": "Next step",
+      "body": "",
+      "origin": "internal_note",
+      "claim_ids": [],
+      "proof_slots": [],
+      "action": null,
+      "internal_link": null,
+      "display_priority": "high",
+      "mobile_order": 8,
+      "approval_status": "blocked"
+    }
+  ],
+  "claims": [
+    {
+      "id": "OM-EQUITY-001",
+      "statement": "OM takes no equity.",
+      "kind": "institutional_fact",
+      "source_ids": [
+        "S-USER-STRATEGY"
+      ],
+      "support_status": "user_confirmed",
+      "approval_status": "approved",
+      "publication_status": "approved",
+      "limitations": "Establishes no absence of fees, conditions, contracts, IP terms, funding availability, or eligibility."
+    }
+  ],
+  "disclosures": {},
+  "links": [],
+  "metrics": [],
+  "testimonial_uses": [],
+  "testimonial_use_basis": "None. All 15 records in the suite testimonial bank carry unknown publication permission, unknown original source, ungranted editing permission and pending publication approval.",
+  "unknowns": [
+    "The one governing mentor-access rule",
+    "Clearance for 6 profiles beyond the approved 20",
+    "Biographies, titles, photos and permissions",
+    "The request destination"
+  ],
+  "primary_action": "Founder help request, pending one confirmed access rule",
+  "maintenance_owner": "Tyler Hebert",
+  "manual_reviews": {
+    "claim_semantics": "pass",
+    "quote_context": "not_applicable_with_reason",
+    "copy_style": "pass",
+    "rendered_desktop": "not_run",
+    "rendered_mobile": "not_run",
+    "accessibility": "not_run",
+    "live_destinations": "not_run"
+  },
+  "page_approval": {
+    "status": "pending",
+    "by": null,
+    "source_id": null,
+    "content_sha256": null
+  },
+  "publication_requested": false,
+  "content_sha256_unapproved": "f0e8d6710e73af49e7aff6ed06cdd838526595f1c482bfc6c8b769a3f83f5649"
+}
