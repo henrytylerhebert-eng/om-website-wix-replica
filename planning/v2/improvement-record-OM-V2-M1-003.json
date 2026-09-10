@@ -15,7 +15,7 @@
   "smallest_useful_test": "Confirm the contract section list matches the rendered section list on the built page, and that the first section still contains both the economic-development identity and the no-equity statement as the homepage checks require.",
   "decision_criterion": "Contract sections and rendered sections correspond one to one, and NO_EQUITY_OPENING and ECONOMIC_OPENING both pass.",
   "owner": "Tyler Hebert",
-  "approval_status": "approved",
-  "approval_source_id": "S-USER-APPROVAL-0909",
+  "approval_status": "pending_review",
+  "approval_source_id": null,
   "rollback": "planning/v2/homepage-v2-page.json.bak holds the six-section draft."
 }

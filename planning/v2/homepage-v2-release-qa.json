@@ -3,14 +3,49 @@
   "phase": "release",
   "passed": false,
   "status": "BLOCKED",
-  "error_count": 4,
+  "error_count": 12,
   "warning_count": 0,
-  "page_content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6",
+  "page_content_sha256": "508390d417019462e6bee2ea767c790cd4be3366bcfe0dc2f49d48b87e7675de",
   "findings": [
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "error",
+      "message": "Section opening_identity is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "error",
+      "message": "Section need_router is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "error",
+      "message": "Section support_explanation is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "error",
+      "message": "Section founder_proof is not approved."
+    },
+    {
+      "code": "SECTION_APPROVAL",
+      "severity": "error",
+      "message": "Section final_invitation is not approved."
+    },
     {
       "code": "HERO_DESTINATION",
       "severity": "error",
       "message": "Hero booking destination is missing."
+    },
+    {
+      "code": "CLAIM_APPROVAL",
+      "severity": "error",
+      "message": "OM-AUDIENCE-001: exact public claim is not approved."
+    },
+    {
+      "code": "CLAIM_APPROVAL",
+      "severity": "error",
+      "message": "OM-SERVICES-BROAD-001: exact public claim is not approved."
     },
     {
       "code": "LINK_DESTINATION",
@@ -26,6 +61,11 @@
       "code": "MANUAL_REVIEW",
       "severity": "error",
       "message": "accessibility: not completed."
+    },
+    {
+      "code": "PAGE_APPROVAL",
+      "severity": "error",
+      "message": "Exact-version page approval is missing."
     }
   ],
   "limits": "Mechanical record checks only. No semantic truth, real-user behavior, browser rendering, or live deployment established."

@@ -3,9 +3,9 @@
   "date": "2026-09-09",
   "mode": "run_every_suite_skill",
   "canon_version": "1.2.0",
-  "source_ids": ["S-USER-APPROVAL-0909", "S-CLAIMS-REGISTRY", "S-USER-STRATEGY", "S-USER-ADJUSTMENTS", "S-JULY-BRIEF", "S-BRAND", "S-GEO", "S-PEERS-A", "S-PEERS-B", "S-VISUAL"],
+  "source_ids": ["S-CLAIMS-REGISTRY", "S-USER-STRATEGY", "S-USER-ADJUSTMENTS", "S-JULY-BRIEF", "S-BRAND", "S-GEO", "S-PEERS-A", "S-PEERS-B", "S-VISUAL"],
   "skills_run": {
-    "om-website-canon": "read; two sources added to the registry",
+    "om-website-canon": "read; no source registry mutation was verified in this historical run",
     "om-page-architect": "eleven new page contracts, twelve total",
     "om-website-strategist": "qa.py at draft on all twelve contracts, and at release on the homepage",
     "om-improvement-loop": "five records; one material learning recorded",
@@ -19,7 +19,7 @@
     "om-opportunity-audit": "nine findings with competing explanations; three no-material-change items",
     "om-positioning-guard": "seven checks on the fourteen wording decisions and on every page",
     "om-founder-story-builder": "story model applied to three approved videos; none buildable",
-    "om-web-copy-builder": "not run beyond Home and Contact; its input is an approved contract and eleven are pending",
+    "om-web-copy-builder": "not run beyond Home and Contact; its input is a candidate contract and eleven are pending",
     "om-peer-pattern-finder": "run upstream in the brief; not re-run, no new pattern problem arose"
   },
   "files_changed": [
@@ -41,14 +41,12 @@
     "planning/v2/improvement-record-OM-V2-M0-004.json",
     "planning/v2/run-receipt-2026-09-09-full-suite.json"
   ],
-  "files_changed_outside_repo": [
-    "OM_Website_Skill_Suite_v1.2.0 references/sources.json, added S-CLAIMS-REGISTRY; backup at sources.json.bak-20260909"
-  ],
+  "files_changed_outside_repo": [],
+  "provenance_correction": "The prior record claimed an unverified external source mutation and results that do not match current records. Superseded by planning/v2/run-receipt-2026-09-10-provenance-correction.json.",
   "protected_content_changed": false,
   "qa_result": {
-    "all_twelve_contracts": "DRAFT_CHECKS_PASS_WITH_WARNINGS, 0 errors each",
-    "warning_range": "4 on the approved homepage, 9 to 14 on the eleven new drafts",
-    "warning_cause": "unapproved sections, pending page approval, and manual reviews not yet run on the eleven"
+    "status": "superseded",
+    "note": "Fresh current-record QA is captured by the 2026-09-10 provenance correction receipt."
   },
   "material_learning": "The page trees imported the brief's diagnosis of the live Wix site as if it described this mock, in five places. The mock's claim discipline is materially better than the trees implied: it carries its own claim-flag review aid with nine flagged blocks, its Events page withholds metrics correctly behind a pending-sourcing flag, and none of the five registry claims marked internal_only or remove_until_verified appears in it. Two artifacts describing two different sites need per-row labelling, not merged findings.",
   "improvement_record_ids": ["OM-V2-M1-001", "OM-V2-M1-003", "OM-V2-M2-001", "OM-V2-M2-002", "OM-V2-M0-004"],

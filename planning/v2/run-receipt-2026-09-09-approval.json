@@ -13,7 +13,7 @@
     "OM Website Skill Suite v1.2.0"
   ],
   "canon_version": "1.2.0",
-  "source_ids": ["S-USER-APPROVAL-0909", "S-USER-STRATEGY", "S-HERO-AUG", "S-CTA-AUG", "S-JULY-BRIEF", "S-VISUAL"],
+  "source_ids": ["S-USER-STRATEGY", "S-HERO-AUG", "S-CTA-AUG", "S-JULY-BRIEF", "S-VISUAL"],
   "files_changed": [
     "index.html",
     "planning/v2/homepage-v2-page.json",
@@ -26,9 +26,8 @@
     "planning/v2/PAGE-TREES-V2.md",
     "planning/v2/run-receipt-2026-09-09-approval.json"
   ],
-  "files_changed_outside_repo": [
-    "OM_Website_Skill_Suite_v1.2.0/skills/om-website-strategist/references/sources.json, added source record S-USER-APPROVAL-0909, backup kept at sources.json.bak-20260909"
-  ],
+  "files_changed_outside_repo": [],
+  "provenance_correction": "The prior record claimed an unverified external source mutation and an exact-version approval source that is not present in the suite. Superseded by planning/v2/run-receipt-2026-09-10-provenance-correction.json.",
   "protected_content_changed": false,
   "protected_content_proposed": "Visual tokens --blue and --gray, proposed in OM-V2-M2-001, not applied",
   "checks_run": [
@@ -57,10 +56,8 @@
     "participant research"
   ],
   "qa_result": {
-    "draft": "DRAFT_CHECKS_PASS_WITH_WARNINGS, 0 errors, 4 warnings, down from 14 warnings",
-    "release": "BLOCKED, 4 errors, down from 14",
-    "page_content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6",
-    "note": "Three of the four remaining findings share one root cause, the Unknown booking destination. The fourth reports accessibility as not completed, which is the validator's only vocabulary for any value other than pass; the review was completed and failed on colour contrast, and manual_review_notes carries the measurements."
+    "status": "superseded",
+    "note": "The prior output is not a current QA result. The corrected contract is candidate/pending review and its QA is regenerated in the 2026-09-10 provenance correction receipt."
   },
   "material_learning": "The homepage published a founder quotation that matches no record in the testimonial bank, attributed jointly to two people who appear in that bank as separate speakers with different sentences. The wider fact is that no record in the bank has publication permission, so no testimonial can appear on any public page yet. Approving a video as media had been treated in practice as covering words drawn from it.",
   "improvement_record_ids": ["OM-V2-M1-001", "OM-V2-M1-003", "OM-V2-M2-001", "OM-V2-M2-002"],
@@ -77,11 +74,6 @@
     "The fourteen wording decisions listed in PAGE-TREES-V2.md",
     "The ten operating facts rolled up in PAGE-TREES-V2.md"
   ],
-  "approval_recorded": {
-    "what": "Economic-development module, five need-based visitor labels, broad interim service sentence, retaining the protected Book a call label",
-    "by": "Tyler Hebert",
-    "source_id": "S-USER-APPROVAL-0909",
-    "content_sha256": "685d4add34b7694e97236e745bac1e6f3e1dcfc11861ae6b1d98a63e15fbcad6"
-  },
+  "approval_recorded": null,
   "live_website_changed": false
 }

@@ -657,9 +657,7 @@ Read every `Current tree` block as describing the mock unless a row says **Wix o
 
 ## Approval and gate status
 
-Recorded 2026-09-09 from source `S-USER-APPROVAL-0909`, content hash `685d4add…5fbcad6`.
-
-**Approved and now recorded in the page contract:** the economic-development module, the five need-based visitor labels, the broad interim service sentence, and retaining the protected `Book a call` label. All five homepage sections carry an exact-version approval. Two claims were added and approved, `OM-AUDIENCE-001` for the audience sentence and `OM-SERVICES-BROAD-001` for the broad support sentence. `OM-SERVICES-001`, the specific version naming mentorship and workspace, stays pending.
+Corrected 2026-09-10. No registered source record established exact-version page approval. The economic-development module and protected `Book a call` label remain grounded in the canon; the five visitor labels and broad interim service sentence are implemented **candidate copy pending review**. All five homepage sections and the two candidate claims (`OM-AUDIENCE-001`, `OM-SERVICES-BROAD-001`) remain pending review. `OM-SERVICES-001`, the specific version naming mentorship and workspace, stays pending.
 
 **Suite QA:** draft passes with 4 warnings, down from 14. Release stays `BLOCKED` with 4 errors, down from 14.
 

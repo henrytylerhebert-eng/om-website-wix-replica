@@ -1,0 +1,59 @@
+{
+  "run_id": "om-site-v2-provenance-correction-2026-09-10",
+  "date": "2026-09-10",
+  "mode": "correct_provenance_and_regenerate_record_qa",
+  "scope": "Mock Site 2.0 candidate records only. No Wix, live site, Airtable, form, analytics, or deployment change.",
+  "source_correction": {
+    "removed_unregistered_source_id": "S-USER-APPROVAL-0909",
+    "registered_source_id": "S-CLAIMS-REGISTRY",
+    "registered_locator": "/Users/tylerhebert/Documents/Work/Opportunity-Machine/04-memory-scaffold/PUBLIC-CLAIMS-REGISTRY.md",
+    "registration_limit": "Registers the local claim-register locator only. It does not create page approval or clear any pending claim."
+  },
+  "contract_correction": {
+    "homepage_status": "candidate_draft_pending_review",
+    "homepage_page_approval": "pending_review",
+    "candidate_copy": [
+      "Five need-based visitor labels",
+      "Audience formulation",
+      "Broad interim support sentence",
+      "Homepage section headings and final invitation"
+    ],
+    "protected_or_user_confirmed": [
+      "For founders who and its five approved endings",
+      "Book a call label",
+      "Opportunity Machine is an economic-development organization.",
+      "OM takes no equity."
+    ]
+  },
+  "checks_run": [
+    "Current source catalog inspection",
+    "Public Claims Registry locator inspection",
+    "Draft record QA for all 12 page contracts",
+    "Release record QA for the homepage"
+  ],
+  "qa_result": {
+    "all_twelve_draft_contracts": "DRAFT_CHECKS_PASS_WITH_WARNINGS; 0 errors each; warning range 9 to 14",
+    "homepage_draft": "DRAFT_CHECKS_PASS_WITH_WARNINGS; 0 errors; 12 warnings",
+    "homepage_release": "BLOCKED; 12 errors; 0 warnings",
+    "reports": [
+      "planning/v2/qa-homepage-v2-page.json",
+      "planning/v2/qa-page-*-v2.json",
+      "planning/v2/homepage-v2-qa.json",
+      "planning/v2/homepage-v2-release-qa.json"
+    ],
+    "limit": "Record QA is mechanical only. It does not establish semantic truth, rendered behavior, accessibility, destination validity, or publication readiness."
+  },
+  "supersedes": [
+    "The approval assertions and QA summaries in run-receipt-2026-09-09-approval.json",
+    "The source-mutation and QA assertions in run-receipt-2026-09-09-full-suite.json"
+  ],
+  "remaining_blockers": [
+    "Exact-version approval of candidate homepage copy",
+    "Canonical Book a call destination and post-click process",
+    "Accessibility contrast remediation",
+    "Current service, access, pricing, eligibility, event, partner, and testimonial facts on affected pages",
+    "Real legal destinations for Privacy and Cookies"
+  ],
+  "live_website_changed": false,
+  "airtable_used": false
+}
