@@ -1,0 +1,22 @@
+{
+  "id": "OM-V2-M1-005",
+  "status": "proposed",
+  "change_class": "M1",
+  "observation": "canon.protected_layout.visual_preferences records five layout rules sourced to S-JULY-BRIEF, the first being light backgrounds with dark text. Measured across all twelve pages, ten open on a dark hero: about, builder-program, membership, mentors, talent, community, events, ecosystem, alumni and contact. Only index.html and clarity-check.html open light. Builder carries four dark sections; mentors, community and ecosystem carry three each. Separately, seven pages close with the identical question 'Ready to build your momentum?'.",
+  "evidence_locator": [
+    "canon.json protected_layout.visual_preferences",
+    "index.html:38 hero hero-light",
+    "about.html, builder-program.html, membership.html, mentors.html, talent.html, community.html, events.html, ecosystem.html, alumni.html, contact.html, each hero on-dark",
+    "planning/v2/DESIGN-AND-LAYOUT-POSITION.md section 4"
+  ],
+  "affected_file_or_page": "All pages except index.html and clarity-check.html",
+  "why_it_matters": "The dark treatment is the default rather than the accent, which inverts the only layout preference OM has actually recorded. It also flattens hierarchy: when every page opens dark and most carry two to four dark bands, the dark band stops signalling anything. The rebuilt homepage shows the intended reading, with a light opening and exactly two dark accents.",
+  "competing_explanation": "The dark hero is visually striking, gives every inner page a consistent identity, and carries the brand navy prominently, which is a legitimate reading of 'dark-blue components'. The July preference may also have described the homepage specifically rather than every page. Against that: the preference is recorded without a page-type scope, and the built homepage demonstrates the light reading works.",
+  "proposed_change": "Light ground as the default on every page, dark as an accent limited to at most two bands, using index.html as the reference implementation. Replace the repeated closing question with one action per page matched to that page's reader, which is GLOBAL-CTA-01 and GLOBAL-CTA-02.",
+  "smallest_useful_test": "Convert one inner page, technical-support, to the light opening with at most two dark accents. Compare rendered desktop and mobile against index.html for hierarchy and contrast, and confirm no text pair drops below its current ratio.",
+  "decision_criterion": "The converted page opens light with dark text, carries no more than two dark bands, keeps the brand blue in components, and no colour pair regresses.",
+  "owner": "Tyler Hebert",
+  "approval_status": "pending",
+  "peer_evidence": "None. All eight peer pattern records carry visual_audit_status not_tested and conversion_evidence unknown, so no part of this proposal is peer-derived. It follows from OM's own recorded preference and from the built homepage.",
+  "rollback": "Per-page revert. No protected copy, claim or operating fact is touched."
+}
