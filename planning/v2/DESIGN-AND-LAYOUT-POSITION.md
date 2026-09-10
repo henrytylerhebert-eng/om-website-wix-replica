@@ -24,8 +24,8 @@ So: **no peer page has been opened.** The records are secondhand from two suppli
 
 | ID | Task | Adaptation on record | Status here |
 | --- | --- | --- | --- |
-| P02 + P08 | Visitor routing, human start | Route by a visitor question, including uncertainty about where to begin | **APPLIED.** The homepage need router, five need statements including "I am not sure where to begin." Built, verified, approved. |
-| P01 | Regional purpose | Connect startup support to the purpose of the organization | **APPLIED.** The identity module immediately after the hero. Built and approved. |
+| P02 + P08 | Visitor routing, human start | Route by a visitor question, including uncertainty about where to begin | **APPLIED IN THE BUILD.** The homepage need router, five need statements including "I am not sure where to begin." Built and rendered-checked. Contract status is candidate, pending review, per `3122d6b`. |
+| P01 | Regional purpose | Connect startup support to the purpose of the organization | **APPLIED IN THE BUILD.** The identity module immediately after the hero. Contract status is candidate, pending review. |
 | P07 | Regional reporting | Separate program activity, company change, and regional measures | **APPLIED at contract level.** It is the governance proof chain and the structure of `page-impact-acadiana-v2.json`, sections `imp_activities`, `imp_company`, `imp_regional`. |
 | P03 | Workspace access | Answer whether participation requires renting space | **BLOCKED.** This is `MEMB-06`, Unknown. |
 | P05 | Mentor access | Explain expertise, request process, eligibility, expectations | **BLOCKED.** This is `MENT-03`, a live contradiction. |
@@ -63,7 +63,7 @@ Builder runs four dark sections, Mentors, Community and Ecosystem three each. Th
 
 ## 5. The global layout we apply
 
-The rebuilt homepage already demonstrates the correct reading, so this is a rule extracted from something built and verified rather than a new proposal:
+The rebuilt homepage already demonstrates the correct reading, so this is a rule extracted from something built and rendered-checked rather than a new proposal. The homepage contract itself is a candidate pending review, so the layout rule below is a proposal too:
 
 1. **Light ground is the default.** Dark is an accent, at most two bands per page. `index.html` uses exactly two: the support summary and the closing invitation. Every page opens light.
 2. **The opening experience carries the identity module on light ground.** Plain visible text, never dependent on animation or a carousel, per the coverage rule.
@@ -84,3 +84,7 @@ It currently cannot support a design decision, and it does not need to for the w
 ## Measurements
 
 No analytics or search baseline was reviewed. **No measurements found.**
+
+## Provenance note
+
+This document was written at 08:09 on 2026-09-10, minutes before commit `3122d6b`, which downgraded the Homepage 2.0 contract from approved to candidate pending review on Tyler's instruction. Three "approved" references above have been corrected to say applied in the build with a candidate contract status. Nothing in the peer analysis depended on that approval.
