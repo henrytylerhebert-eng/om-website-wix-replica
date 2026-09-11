@@ -1,8 +1,8 @@
 # Live Wix Copy and Experience Handoff V2
 
-**Target:** `https://robertehebert.wixstudio.com/opportunity-machine`  
-**Captured live pages:** 2026-09-10 desktop rendered inspection  
-**Strategy input:** Tyler's supplied recap of decisions with Destin, incorporated 2026-09-11  
+**Target:** `https://robertehebert.wixstudio.com/opportunity-machine`
+**Captured live pages:** 2026-09-10 desktop rendered inspection
+**Strategy input:** Tyler's supplied recap of decisions with Destin, incorporated 2026-09-11
 **Scope:** A copy and experience handoff for Wix. It does not authorize an edit, publication, form submission, or public claim.
 
 ## Decision rule
@@ -30,7 +30,7 @@ The site speaks to founders first, then makes Membership the persistent conversi
 
 ## Homepage
 
-**Visitor:** A founder who is stuck, uncertain, or trying to make a next decision.  
+**Visitor:** A founder who is stuck, uncertain, or trying to make a next decision.
 **Goal:** Recognition and a clear route, not a long Builder sales page.
 
 ```
@@ -59,7 +59,7 @@ Ecosystem connection and final conversion action
 
 ## Membership
 
-**Visitor:** A founder evaluating an ongoing relationship with OM.  
+**Visitor:** A founder evaluating an ongoing relationship with OM.
 **Goal:** Make Membership the first navigation item and primary conversion path, after explaining what it is for.
 
 ```
@@ -87,7 +87,7 @@ The card labels are the strategy direction, not approval to claim every inclusio
 
 ## Programs portfolio
 
-**Visitor:** A founder seeking the right kind of support for their stage.  
+**Visitor:** A founder seeking the right kind of support for their stage.
 **Goal:** Replace a single Builder-first page with a portfolio that explains what OM can address across stages.
 
 ```
@@ -131,7 +131,7 @@ Place one dedicated Cohort Experience section on Programs, then echo its most re
 
 ## Mentors
 
-**Visitor:** A founder seeking proof that a credible mentor network exists.  
+**Visitor:** A founder seeking proof that a credible mentor network exists.
 **Goal:** Build confidence through people, not an over-engineered expertise taxonomy or undisclosed internal rules.
 
 ```
@@ -150,7 +150,7 @@ Remove the specialties grid for now. Refresh the mentor list with Teresa, then p
 
 ## Founder stories and alumni
 
-**Visitor:** A founder assessing whether OM has credible, relevant examples.  
+**Visitor:** A founder assessing whether OM has credible, relevant examples.
 **Goal:** Separate current-member story proof from historic alumni track record.
 
 ```
@@ -169,7 +169,7 @@ Prioritize active founder stories at the top. Put historical alumni logos below,
 
 ## Ecosystem
 
-**Visitor:** A founder or partner looking for context and useful Louisiana connections.  
+**Visitor:** A founder or partner looking for context and useful Louisiana connections.
 **Goal:** Show OM as a connector in a larger ecosystem without cloning a directory, maintaining a statewide event calendar, or implying access through a logo.
 
 ```
@@ -192,7 +192,7 @@ Use “one node in a larger Louisiana startup ecosystem,” not “one room in a
 
 ## About OM
 
-**Visitor:** A founder, partner, or community member asking what OM is and why it exists.  
+**Visitor:** A founder, partner, or community member asking what OM is and why it exists.
 **Goal:** Hold the institutional mission here, after the founder-first experience has established relevance.
 
 ```
@@ -213,7 +213,7 @@ Update `Lafayette's premier` to `Acadiana's premier`; replace `elite mentorship`
 
 ## Events and community
 
-**Visitor:** A founder looking for a real way to participate.  
+**Visitor:** A founder looking for a real way to participate.
 **Goal:** Keep Events focused on OM events. Fold broader community language into the Ecosystem experience.
 
 ```
@@ -230,7 +230,7 @@ Do not maintain a statewide all-events calendar. Ecosystem instead highlights a 
 
 ## Contact and conversion
 
-**Visitor:** A founder ready to ask a question or begin a relationship.  
+**Visitor:** A founder ready to ask a question or begin a relationship.
 **Goal:** Explain the next step without treating an inquiry as admission.
 
 Use `Schedule a call` alongside `Apply for membership` only after the actual destinations, reviewer, privacy handling, response expectation, and form routing are confirmed. Keep `OM takes no equity.` before any application/intake submission. The exact booking destination remains Unknown.
