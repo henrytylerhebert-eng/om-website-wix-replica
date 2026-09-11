@@ -4,6 +4,8 @@
 **Captured:** 2026-09-10 desktop rendered inspection  
 **Scope:** Copy, cards, page flow, and navigation recommendations. This document does not authorize Wix edits, form submission, live publication, or a factual claim.
 
+**Superseded for strategy direction:** See `LIVE-WIX-COPY-EXPERIENCE-HANDOFF-V2.md`. The v2 handoff incorporates Tyler's supplied decisions with Destin: Membership-first navigation, founder-led hero hierarchy, a Programs portfolio, logo-led Ecosystem, and a clearer founder-story model.
+
 ## What this handoff is for
 
 The live Wix site is the page set to change. Mock Site 2.0 is a communication prototype showing the direction, not the source of truth or a deployable replacement. The goal is to give Robert a page-by-page change request that answers four things: what a visitor needs first, what each page should contain, what belongs in a card, and what must be confirmed before it is published.
