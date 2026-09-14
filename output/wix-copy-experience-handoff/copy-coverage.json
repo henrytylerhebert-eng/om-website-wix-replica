@@ -1,0 +1,707 @@
+{
+  "revision": "2.0 · ordered copy review",
+  "status": "draft_copy_placement_review_not_publication_approval",
+  "global": {
+    "id": "global-shell",
+    "written": [
+      "Header navigation",
+      "Shared closing copy",
+      "Footer copy"
+    ],
+    "pending": [
+      "Booking/application destinations",
+      "Current contact details, social and legal links"
+    ]
+  },
+  "pages": [
+    {
+      "id": "homepage",
+      "label": "Homepage",
+      "copy_modules": 7,
+      "cards": 5,
+      "sections": [
+        {
+          "id": "home-hero",
+          "order": 1,
+          "status": "locked_text",
+          "title": "For founders who…"
+        },
+        {
+          "id": "home-recognition",
+          "order": 2,
+          "status": "proposed",
+          "title": "Make progress on the question in front of you."
+        },
+        {
+          "id": "home-purpose",
+          "order": 3,
+          "status": "proposed",
+          "title": "Startup support with a regional purpose."
+        },
+        {
+          "id": "home-routes",
+          "order": 4,
+          "status": "proposed",
+          "title": "What are you trying to do next?"
+        },
+        {
+          "id": "quote-t012",
+          "order": 5,
+          "status": "exact_testimonial",
+          "title": "T012"
+        },
+        {
+          "id": "home-stories",
+          "order": 6,
+          "status": "proposed",
+          "title": "Hear from founders who have worked with OM."
+        },
+        {
+          "id": "home-network",
+          "order": 7,
+          "status": "proposed",
+          "title": "A connection to the wider ecosystem."
+        }
+      ],
+      "missing_content": [],
+      "publication_status": "pending"
+    },
+    {
+      "id": "membership",
+      "label": "Membership",
+      "copy_modules": 6,
+      "cards": 6,
+      "sections": [
+        {
+          "id": "membership-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "A membership built around your next move."
+        },
+        {
+          "id": "membership-meaning",
+          "order": 2,
+          "status": "proposed",
+          "title": "What being a member means"
+        },
+        {
+          "id": "membership-benefits",
+          "order": 3,
+          "status": "proposed",
+          "title": "Membership benefits"
+        },
+        {
+          "id": "quote-t014",
+          "order": 4,
+          "status": "exact_testimonial",
+          "title": "T014"
+        },
+        {
+          "id": "membership-next",
+          "order": 5,
+          "status": "proposed",
+          "title": "Find the right place to begin."
+        },
+        {
+          "id": "membership-call-faq",
+          "order": 6,
+          "status": "proposed",
+          "title": "What happens on an interest call?"
+        },
+        {
+          "id": "membership-terms",
+          "order": 7,
+          "status": "awaiting_source_content",
+          "title": "Participation terms to resolve"
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "membership-terms",
+          "label": "Participation terms to resolve"
+        }
+      ],
+      "publication_status": "pending"
+    },
+    {
+      "id": "programs",
+      "label": "Programs",
+      "copy_modules": 8,
+      "cards": 7,
+      "sections": [
+        {
+          "id": "programs-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Programs built for every stage of growth."
+        },
+        {
+          "id": "programs-stage",
+          "order": 2,
+          "status": "proposed",
+          "title": "Start with where you are now."
+        },
+        {
+          "id": "programs-core",
+          "order": 3,
+          "status": "proposed",
+          "title": "Explore the programs"
+        },
+        {
+          "id": "programs-cohort",
+          "order": 4,
+          "status": "proposed",
+          "title": "Build alongside other founders."
+        },
+        {
+          "id": "programs-progression",
+          "order": 5,
+          "status": "proposed",
+          "title": "Continue with the next challenge."
+        },
+        {
+          "id": "quote-t006",
+          "order": 6,
+          "status": "exact_testimonial",
+          "title": "T006"
+        },
+        {
+          "id": "programs-services",
+          "order": 7,
+          "status": "proposed",
+          "title": "Focused help for a specific next step."
+        },
+        {
+          "id": "programs-tech-transfer",
+          "order": 8,
+          "status": "awaiting_source_content",
+          "title": "Tech Transfer"
+        },
+        {
+          "id": "programs-events",
+          "order": 9,
+          "status": "proposed",
+          "title": "Meet founders beyond the program."
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "programs-tech-transfer",
+          "label": "Tech Transfer"
+        }
+      ],
+      "publication_status": "pending"
+    },
+    {
+      "id": "builder-1",
+      "label": "Builder 1.0",
+      "copy_modules": 11,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "b1-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Test the idea. Learn what deserves to be built."
+        },
+        {
+          "id": "b1-work",
+          "order": 2,
+          "status": "proposed",
+          "title": "Turn assumptions into something you can test."
+        },
+        {
+          "id": "quote-t002",
+          "order": 3,
+          "status": "exact_testimonial",
+          "title": "T002"
+        },
+        {
+          "id": "b1-format",
+          "order": 4,
+          "status": "proposed",
+          "title": "A weekly cohort experience"
+        },
+        {
+          "id": "b1-meetup",
+          "order": 5,
+          "status": "proposed",
+          "title": "Finish with direct mentor feedback."
+        },
+        {
+          "id": "b1-question",
+          "order": 6,
+          "status": "proposed",
+          "title": "Questions about Builder 1.0"
+        },
+        {
+          "id": "b1-faq-idea",
+          "order": 7,
+          "status": "proposed",
+          "title": "Do I need a finished idea?"
+        },
+        {
+          "id": "b1-faq-technical",
+          "order": 8,
+          "status": "proposed",
+          "title": "Do I need to be technical?"
+        },
+        {
+          "id": "b1-faq-evidence",
+          "order": 9,
+          "status": "proposed",
+          "title": "What if I find out my idea doesn’t work?"
+        },
+        {
+          "id": "b1-faq-time",
+          "order": 10,
+          "status": "proposed",
+          "title": "How much time does it take?"
+        },
+        {
+          "id": "b1-faq-call",
+          "order": 11,
+          "status": "proposed",
+          "title": "What happens on the interest call?"
+        }
+      ],
+      "missing_content": [],
+      "publication_status": "pending"
+    },
+    {
+      "id": "builder-2",
+      "label": "Builder 2.0",
+      "copy_modules": 3,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "b2-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Build on the evidence. Work on the company."
+        },
+        {
+          "id": "b2-work",
+          "order": 2,
+          "status": "proposed",
+          "title": "Look closely at how the company works."
+        },
+        {
+          "id": "b2-next",
+          "order": 3,
+          "status": "proposed",
+          "title": "Choose the work that matters next."
+        }
+      ],
+      "missing_content": [],
+      "publication_status": "pending"
+    },
+    {
+      "id": "mentor-program",
+      "label": "Mentor Program",
+      "copy_modules": 3,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "mp-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Bring the decision you are working on."
+        },
+        {
+          "id": "mp-work",
+          "order": 2,
+          "status": "proposed",
+          "title": "Keep the conversation practical."
+        },
+        {
+          "id": "mp-people",
+          "order": 3,
+          "status": "proposed",
+          "title": "Meet the people behind the guidance."
+        }
+      ],
+      "missing_content": [],
+      "publication_status": "pending"
+    },
+    {
+      "id": "eti",
+      "label": "ETI",
+      "copy_modules": 3,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "eti-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Build an early product you can test."
+        },
+        {
+          "id": "eti-work",
+          "order": 2,
+          "status": "proposed",
+          "title": "Put the idea in front of customers."
+        },
+        {
+          "id": "eti-fit",
+          "order": 3,
+          "status": "proposed",
+          "title": "Talk through the technical work ahead."
+        }
+      ],
+      "missing_content": [],
+      "publication_status": "pending"
+    },
+    {
+      "id": "founder-services",
+      "label": "Founder Services",
+      "copy_modules": 3,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "services-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Focused support for the work in front of you."
+        },
+        {
+          "id": "services-pitch",
+          "order": 2,
+          "status": "proposed",
+          "title": "Pitch Prep"
+        },
+        {
+          "id": "services-beta",
+          "order": 3,
+          "status": "proposed",
+          "title": "Beta Testing"
+        }
+      ],
+      "missing_content": [],
+      "publication_status": "pending"
+    },
+    {
+      "id": "events",
+      "label": "Events",
+      "copy_modules": 6,
+      "cards": 3,
+      "sections": [
+        {
+          "id": "events-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Meet the right people, on purpose"
+        },
+        {
+          "id": "events-benefits",
+          "order": 2,
+          "status": "proposed",
+          "title": "What these connections can lead to"
+        },
+        {
+          "id": "events-innovate",
+          "order": 3,
+          "status": "proposed",
+          "title": "Innovate South"
+        },
+        {
+          "id": "quote-t003",
+          "order": 4,
+          "status": "exact_testimonial",
+          "title": "T003"
+        },
+        {
+          "id": "events-mix",
+          "order": 5,
+          "status": "proposed",
+          "title": "Mix & Jingle"
+        },
+        {
+          "id": "events-circle",
+          "order": 6,
+          "status": "proposed",
+          "title": "Startup Circle"
+        },
+        {
+          "id": "events-current",
+          "order": 7,
+          "status": "awaiting_source_content",
+          "title": "Current event details"
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "events-current",
+          "label": "Current event details"
+        }
+      ],
+      "publication_status": "pending"
+    },
+    {
+      "id": "mentors",
+      "label": "Mentors",
+      "copy_modules": 3,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "mentors-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Experienced perspectives on your next decision."
+        },
+        {
+          "id": "mentors-intro",
+          "order": 2,
+          "status": "proposed",
+          "title": "Meet OM’s mentors"
+        },
+        {
+          "id": "mentors-profiles",
+          "order": 3,
+          "status": "awaiting_source_content",
+          "title": "Existing mentor profiles"
+        },
+        {
+          "id": "mentors-request",
+          "order": 4,
+          "status": "proposed",
+          "title": "Talk with OM about the support you need."
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "mentors-profiles",
+          "label": "Existing mentor profiles"
+        }
+      ],
+      "publication_status": "pending"
+    },
+    {
+      "id": "alumni",
+      "label": "Alumni / Founder Stories",
+      "copy_modules": 6,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "stories-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Founders, in their own words."
+        },
+        {
+          "id": "stories-intro",
+          "order": 2,
+          "status": "proposed",
+          "title": "Watch the founder stories"
+        },
+        {
+          "id": "story-glowsens",
+          "order": 3,
+          "status": "proposed",
+          "title": "GlowSens"
+        },
+        {
+          "id": "story-mallard",
+          "order": 4,
+          "status": "proposed",
+          "title": "Mallard Bay"
+        },
+        {
+          "id": "story-keepers",
+          "order": 5,
+          "status": "proposed",
+          "title": "Keepers"
+        },
+        {
+          "id": "stories-alumni",
+          "order": 6,
+          "status": "proposed",
+          "title": "Companies from OM’s alumni community"
+        },
+        {
+          "id": "stories-inventory",
+          "order": 7,
+          "status": "awaiting_source_content",
+          "title": "Alumni logos and new written stories"
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "stories-inventory",
+          "label": "Alumni logos and new written stories"
+        }
+      ],
+      "publication_status": "pending"
+    },
+    {
+      "id": "ecosystem",
+      "label": "Ecosystem",
+      "copy_modules": 7,
+      "cards": 7,
+      "sections": [
+        {
+          "id": "eco-hero",
+          "order": 1,
+          "status": "proposed",
+          "title": "Find your next connection in Louisiana’s startup ecosystem."
+        },
+        {
+          "id": "eco-connect",
+          "order": 2,
+          "status": "proposed",
+          "title": "Start with the question you are working through."
+        },
+        {
+          "id": "quote-t013",
+          "order": 3,
+          "status": "exact_testimonial",
+          "title": "T013"
+        },
+        {
+          "id": "eco-players",
+          "order": 4,
+          "status": "proposed",
+          "title": "Explore the wider network"
+        },
+        {
+          "id": "eco-player-list",
+          "order": 5,
+          "status": "awaiting_source_content",
+          "title": "Ecosystem player logos and links"
+        },
+        {
+          "id": "eco-partners",
+          "order": 6,
+          "status": "proposed",
+          "title": "Partnerships"
+        },
+        {
+          "id": "eco-partner-list",
+          "order": 7,
+          "status": "awaiting_source_content",
+          "title": "Verified partnership cards"
+        },
+        {
+          "id": "eco-proof",
+          "order": 8,
+          "status": "proposed",
+          "title": "Proof that it’s working"
+        },
+        {
+          "id": "eco-events",
+          "order": 9,
+          "status": "proposed",
+          "title": "Explore Louisiana’s innovation gatherings"
+        },
+        {
+          "id": "eco-events-inventory",
+          "order": 10,
+          "status": "awaiting_source_content",
+          "title": "Event logos and links"
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "eco-player-list",
+          "label": "Ecosystem player logos and links"
+        },
+        {
+          "id": "eco-partner-list",
+          "label": "Verified partnership cards"
+        },
+        {
+          "id": "eco-proof",
+          "label": "Publication dates and thumbnail rights for the selected statewide stories"
+        },
+        {
+          "id": "eco-events-inventory",
+          "label": "Event logos and links"
+        }
+      ],
+      "publication_status": "pending"
+    },
+    {
+      "id": "about",
+      "label": "About OM",
+      "copy_modules": 7,
+      "cards": 0,
+      "sections": [
+        {
+          "id": "about-mission",
+          "order": 1,
+          "status": "source_verbatim",
+          "title": "About Opportunity Machine"
+        },
+        {
+          "id": "about-purpose",
+          "order": 2,
+          "status": "proposed",
+          "title": "Economic development that starts with founders."
+        },
+        {
+          "id": "quote-t001",
+          "order": 3,
+          "status": "exact_testimonial",
+          "title": "T001"
+        },
+        {
+          "id": "about-support",
+          "order": 4,
+          "status": "proposed",
+          "title": "Find the support that fits your next step."
+        },
+        {
+          "id": "about-team",
+          "order": 5,
+          "status": "proposed",
+          "title": "Meet the OM team"
+        },
+        {
+          "id": "about-team-cards",
+          "order": 6,
+          "status": "awaiting_source_content",
+          "title": "Existing team profiles"
+        },
+        {
+          "id": "about-board",
+          "order": 7,
+          "status": "proposed",
+          "title": "Board of Directors"
+        },
+        {
+          "id": "about-board-cards",
+          "order": 8,
+          "status": "awaiting_source_content",
+          "title": "Existing board profiles"
+        },
+        {
+          "id": "about-news",
+          "order": 9,
+          "status": "proposed",
+          "title": "News from OM"
+        },
+        {
+          "id": "about-news-items",
+          "order": 10,
+          "status": "awaiting_source_content",
+          "title": "Existing news articles"
+        }
+      ],
+      "missing_content": [
+        {
+          "id": "about-team-cards",
+          "label": "Existing team profiles"
+        },
+        {
+          "id": "about-board-cards",
+          "label": "Existing board profiles"
+        },
+        {
+          "id": "about-news-items",
+          "label": "Existing news articles"
+        }
+      ],
+      "publication_status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "revision": "2.0 · ordered copy review",
+  "scope": "Local developer handoff only; not Wix publication QA",
+  "static_status": "pass",
+  "checks": [
+    {
+      "check": "page_order",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "unique_dom_ids",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "local_anchors",
+      "status": "pass",
+      "detail": "[]"
+    },
+    {
+      "check": "local_assets",
+      "status": "pass",
+      "detail": "[]"
+    },
+    {
+      "check": "eight_page_screenshots",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "selected_quote_set",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "rendered_quote_text",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T001_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T001_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T002_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T002_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T003_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T003_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T006_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T006_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T012_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T012_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T013_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T013_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T014_quote_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "T014_attribution_hash",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "homepage_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "homepage_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "homepage_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "homepage_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "homepage_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "programs_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "programs_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "programs_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "programs_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "programs_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-1_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-1_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-1_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-1_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-1_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-2_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-2_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-2_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-2_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder-2_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentor-program_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentor-program_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentor-program_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentor-program_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentor-program_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "eti_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "eti_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "eti_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "eti_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "eti_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "founder-services_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "founder-services_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "founder-services_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "founder-services_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "founder-services_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentors_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentors_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentors_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentors_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "mentors_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "alumni_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "alumni_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "alumni_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "alumni_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "alumni_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "about_quote_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "about_claim_reference_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "about_source_resolution",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "about_pending_status",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "about_bottom_ctas",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "exact_six_hero_lines",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "single_fixed_hero_phrase",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "named_roster_instruction_removed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "removed_reassurance_not_displayed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_founder_connection_headline",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_order_and_quote_context",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_three_connection_headings",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_flagship_and_destination",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_new_direction_traceable",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "events_no_unsupplied_pitch_practice",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "homepage_named_story_and_location",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_benefit_routes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "membership_benefit_order",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder_faq_group",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "builder_eti_route",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "about_both_routes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "team_and_board_content_placement",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_players_not_partners",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_three_real_story_cards",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "ecosystem_four_candidate_event_cards",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "startup_prize_unverified_destination_inactive",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "footer_copy_rendered",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "copy_coverage_all_pages",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "copy_coverage_order_matches",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "nested_sources_resolve",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "no_instruction_only_public_modules",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "check": "om_skill_new_copy_lint",
+      "status": "pass",
+      "detail": "92 copy units; "
+    },
+    {
+      "check": "om_skill_shared_copy_lint",
+      "status": "pass",
+      "detail": "[]"
+    },
+    {
+      "check": "rendered_receipt_matches_current_files",
+      "status": "pass",
+      "detail": "[]"
+    }
+  ],
+  "rendered": {
+    "status": "pass_bounded_local_review",
+    "date": "2026-09-14",
+    "environment": "Local static handoff served at http://127.0.0.1:4173/index.html; Chrome via Playwright",
+    "tested_fingerprints": {
+      "index.html": "3c5f7c5bebd84558d8c61f5e8d40b9589a0178ea2b8bde8c66a0319a4731a9d8",
+      "review.css": "0a8bf379b12af36cc095141bdfe71c998f1655c05c05279134f00553f1e1360d",
+      "review.js": "8a86e61331f7178c888bc85a85c57f31c386f25a56493197b2c1e518c3406064"
+    },
+    "checks": [
+      {
+        "check": "desktop_document_width",
+        "status": "pass",
+        "viewport": "1440x1000",
+        "document_width": 1440
+      },
+      {
+        "check": "mobile_document_width",
+        "status": "pass",
+        "viewport": "390x844",
+        "document_width": 390
+      },
+      {
+        "check": "page_capture_images",
+        "status": "pass",
+        "detail": "All eight images decoded with nonzero dimensions after scrolling and requesting eager loading in the test browser only."
+      },
+      {
+        "check": "mobile_page_tree",
+        "status": "pass",
+        "detail": "Pages opens the tree, Ecosystem navigates and closes it; aria-expanded follows state. Coverage table scrolls within the mobile page without document overflow."
+      },
+      {
+        "check": "full_size_capture",
+        "status": "pass",
+        "detail": "Modal opens from screenshot link; Escape closes it."
+      },
+      {
+        "check": "copy_view",
+        "status": "pass",
+        "detail": "Copy view applies and reverses; full source/notes view is restored."
+      },
+      {
+        "check": "copy_text",
+        "status": "pass",
+        "detail": "New footer and Ecosystem proof buttons reach the actual Copied state after a bounded asynchronous wait. Other browsers may use the selection fallback."
+      },
+      {
+        "check": "active_page_indicator",
+        "status": "pass",
+        "detail": "Ecosystem correctly highlighted after navigation in this revision."
+      },
+      {
+        "check": "specific_copy_routes",
+        "status": "pass",
+        "detail": "Homepage GlowSens link navigates to the actual story card; Membership has three relevant benefit links; About has both Membership and Programs links."
+      },
+      {
+        "check": "rendered_testimonial_locations",
+        "status": "pass",
+        "detail": "All seven quote elements have the correct containing page: Home T012, Membership T014, Programs T006, Builder 1.0 T002, Events T003, Ecosystem T013, About T001."
+      },
+      {
+        "check": "browser_console",
+        "status": "pass",
+        "detail": "No errors or warnings reported in the final review session."
+      },
+      {
+        "check": "visual_spot_review",
+        "status": "pass",
+        "detail": "Coverage table, actual shared-footer copy, and Ecosystem proof cards inspected on desktop; stacked Ecosystem cards inspected at 390px. Remaining holds are visible rather than presented as completed factual inventories. Not an exhaustive visual certification of every module."
+      }
+    ],
+    "captures": [
+      "qa/desktop.png",
+      "qa/ecosystem.png",
+      "qa/footer.png",
+      "qa/mobile.png"
+    ],
+    "limitations": [
+      "The first clipboard assertion ran before its asynchronous handler completed. It was rerun with a bounded wait for the actual Copied state and passed.",
+      "One earlier test waited on lazy images without first requesting them and was stopped; final image checks were rerun successfully with bounded waits.",
+      "Screenshots after deep anchor navigation were recaptured after layout settled; no early transitional capture is used as QA evidence.",
+      "Accessibility checked only for visible structure and tested controls, not full WCAG certification or screen-reader testing.",
+      "Print/PDF, other browser engines, real-device behavior, and deployment were not tested.",
+      "All final booking/application URLs and public-content approval remain pending."
+    ]
+  },
+  "fingerprints": {
+    "index.html": "3c5f7c5bebd84558d8c61f5e8d40b9589a0178ea2b8bde8c66a0319a4731a9d8",
+    "review.css": "0a8bf379b12af36cc095141bdfe71c998f1655c05c05279134f00553f1e1360d",
+    "review.js": "8a86e61331f7178c888bc85a85c57f31c386f25a56493197b2c1e518c3406064",
+    "content.mjs": "74a0742ae10de26dbd173ef015d6391deba004883c598efb899ecd14c4c7196c",
+    "page-contracts.json": "82a8877b1eff9b9182c4fdcc89a0e58a2bade1da08d4994e30a1b8f60717e415",
+    "source-testimonials.json": "02020452c45c4e549d216f51a53147627e5c0c55d57c32138512e9e9bc514b53",
+    "copy-coverage.json": "2b082dcddfff318a171c8ae0294da774b06f637906f790e6b225257640984172"
+  },
+  "old_suite_full_validator": "Not run: its seed homepage requirements conflict with later explicit user decisions. This handoff has a separate review schema.",
+  "release_gates": {
+    "page_approval": "pending",
+    "testimonial_permission": "Unknown",
+    "live_wix_changes": "none",
+    "booking_and_application_destinations": "Unknown",
+    "current_program_owner_approval": "pending",
+    "analytics_baseline": "No measurements found"
+  }
+}

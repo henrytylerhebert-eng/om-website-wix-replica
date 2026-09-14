@@ -1,0 +1,323 @@
+{
+  "version": "1.2.0",
+  "source": "OM website skill suite original testimonial bank; received 2026-09-09",
+  "records": [
+    {
+      "id": "T001",
+      "speaker_id": "rob-gaudet",
+      "speaker": "Rob Gaudet",
+      "role_as_supplied": null,
+      "company_as_supplied": null,
+      "quote_exact": "Destin, Opportunity Machine and his team are such an asset to the Lafayette community. It only takes one entrepreneur to bring something big that can create opportunities for many. But for every entrepreneur, it requires many to help along the way. Thank you OM for creating opportunities for synergy to happen.",
+      "attribution_exact": "— Rob Gaudet",
+      "context_as_supplied": null,
+      "quote_sha256": "33dc935f785efb53946d940f1a8bdee3b6f85f0bce2aa4f63852bd5c2251b52d",
+      "attribution_sha256": "689d04f140ed435a65654f2b5e546798ea6d19200189352aee017b44f922528e",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "community",
+        "regional_purpose"
+      ],
+      "suggested_pages": [
+        "community",
+        "about",
+        "partners"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    },
+    {
+      "id": "T002",
+      "speaker_id": "sarah-brasseaux",
+      "speaker": "Sarah Brasseaux",
+      "role_as_supplied": "Co-founder",
+      "company_as_supplied": "Blue Partner",
+      "quote_exact": "The Builder Program through Opportunity Machine has been a total game-changer for us, giving us the tools and support to really get our startup off the ground. If you're ready to bring your idea to life, this is the program you need!",
+      "attribution_exact": "— Sarah Brasseaux — Co-founder, Blue Partner",
+      "context_as_supplied": null,
+      "quote_sha256": "462311b36f0692d310c79a544e2cf9318edd8c534022d841d2b180f9303af62a",
+      "attribution_sha256": "bcb47ba3aab4f3f32cdb0dab03b1f09b6b903b3a6497083286732321091a9c86",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "builder",
+        "staff_support"
+      ],
+      "suggested_pages": [
+        "builder"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    },
+    {
+      "id": "T003",
+      "speaker_id": "sarah-brasseaux",
+      "speaker": "Sarah Brasseaux",
+      "role_as_supplied": "Co-founder",
+      "company_as_supplied": "Blue Partner",
+      "quote_exact": "I have to admit, stepping into the Innovate South pitch competition was way outside my comfort zone and honestly, something I was dreading. I sure am grateful y'all pushed me to do it though. The resources and platform you provided were not only invaluable for presenting our vision but also helped us connect with some amazing people. Your dedication to supporting startups and innovators like us has truly made a significant difference. We are very thankful for the opportunity and excited about what we can achieve together going forward!",
+      "attribution_exact": "— Sarah Brasseaux — Co-founder, Blue Partner",
+      "context_as_supplied": null,
+      "quote_sha256": "bf16c035de1e4ea9dcd4f20665dad2352dfa09a2a0c67628ab01ce4eb95b973f",
+      "attribution_sha256": "bcb47ba3aab4f3f32cdb0dab03b1f09b6b903b3a6497083286732321091a9c86",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "pitch_opportunity",
+        "relationships",
+        "founder_confidence"
+      ],
+      "suggested_pages": [
+        "events",
+        "founder_stories"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    },
+    {
+      "id": "T006",
+      "speaker_id": "katie-kennedy",
+      "speaker": "Katie Kennedy",
+      "role_as_supplied": "Co-founder",
+      "company_as_supplied": "Piercd",
+      "quote_exact": "We're SUPER grateful for Opportunity Machine and the invaluable information and relationships we have made going through both Builder 1.0 and 2.0.",
+      "attribution_exact": "— Katie Kennedy — Co-founder, Piercd",
+      "context_as_supplied": null,
+      "quote_sha256": "0494edd4cd08d238e4c49a6af2b47d90aea6795ccb98ded22b9835bd39066ce8",
+      "attribution_sha256": "2c8fbbaa482b15c21be3de3b508400b132def3d2093bd844b702ef2501d071a4",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "builder",
+        "relationships"
+      ],
+      "suggested_pages": [
+        "builder",
+        "community"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    },
+    {
+      "id": "T012",
+      "speaker_id": "ansley-bienvenu",
+      "speaker": "Ansley Bienvenu",
+      "role_as_supplied": "Founder",
+      "company_as_supplied": "SafeBoard",
+      "quote_exact": "I participated in Opportunity Machine's Builder Program, and I can't say enough good things about it. The encouragement of customer interviews, availability of mentors, the opportunity to pitch at my first pitch competition, and the support and guidance of the Opportunity Machine staff has provided a wealth of knowledge and experience.",
+      "attribution_exact": "— Ansley Bienvenu — Founder, SafeBoard",
+      "context_as_supplied": null,
+      "quote_sha256": "2056438a69c6baf46717272b92bd6f1ff0a3a4af624466129523b5ff4e0b9489",
+      "attribution_sha256": "ddf363ad1e80daf4f030caee71756d852b7847d51261dd82437e94283b077c37",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "customer_interviews",
+        "mentorship",
+        "pitch_opportunity",
+        "staff_guidance"
+      ],
+      "suggested_pages": [
+        "homepage",
+        "builder"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    },
+    {
+      "id": "T013",
+      "speaker_id": "stefan-arnold",
+      "speaker": "Stefan Arnold",
+      "role_as_supplied": "Co-founder",
+      "company_as_supplied": "GlowSens",
+      "quote_exact": "If it wouldn't have been for y'all, I would have never met Noah.",
+      "attribution_exact": "— Stefan Arnold — Co-founder, GlowSens (on meeting his co-founder through an OM Startup Circle meetup)",
+      "context_as_supplied": "on meeting his co-founder through an OM Startup Circle meetup",
+      "quote_sha256": "3527024d77adbae62e6a8ed2e1f3768ffb3c6622f198ac4a5b7fd28838cb1540",
+      "attribution_sha256": "89c894799b3a242b2fde212cc4e6769c9800da493de9c926b7ea91342047fd61",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "cofounder_connection"
+      ],
+      "suggested_pages": [
+        "homepage",
+        "community"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    },
+    {
+      "id": "T014",
+      "speaker_id": "jordy-davidson",
+      "speaker": "Jordy Davidson",
+      "role_as_supplied": "Co-founder",
+      "company_as_supplied": "Nestor",
+      "quote_exact": "Opportunity Machine helps structure and formulate this into something... all of that is not a pat on the back to me and Shawn — of course, we did a lot of the work — but the pat on the back goes to Opportunity Machine, because it helped structure and formulate all of this stuff and these ideas, into a package that we could present to people.",
+      "attribution_exact": "— Jordy Davidson — Co-founder, Nestor (on closing a $1M seed round after OM's Builder Program)",
+      "context_as_supplied": "on closing a $1M seed round after OM's Builder Program",
+      "quote_sha256": "a41424a0c830dbad724c5c3c0fbc39c6434c9dd5592afabd0298fb44519aa303",
+      "attribution_sha256": "e6cf0cf03ce16095dd284a16245ba9aaee3030340ac2bcb5d2a35d132a743cd5",
+      "evidence_kind": "attributed_experience",
+      "source_id": "S-TESTIMONIALS",
+      "evidence_status": "user_supplied",
+      "original_source_status": "unknown",
+      "original_source_url": null,
+      "original_date": null,
+      "received_on": "2026-09-09",
+      "speaker_identity_verified": false,
+      "current_title_verified": false,
+      "publication_permission_status": "unknown",
+      "publication_permission_source": null,
+      "publication_approval": {
+        "status": "pending",
+        "by": null,
+        "source_id": null
+      },
+      "editing_permission_status": "not_granted",
+      "draft_use_allowed": true,
+      "suggested_tags": [
+        "business_presentation",
+        "structure"
+      ],
+      "suggested_pages": [
+        "builder",
+        "founder_stories"
+      ],
+      "classification_status": "editorial_recommendation",
+      "independent_company_claim_support": false,
+      "limitations": [
+        "Experience attributed to this speaker only.",
+        "Supplying this text does not establish original date, consent, current role, or independent factual verification.",
+        "Do not extrapolate to a typical participant or aggregate regional effect."
+      ]
+    }
+  ]
+}

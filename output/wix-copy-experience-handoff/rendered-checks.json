@@ -1,0 +1,33 @@
+{
+  "status": "pass_bounded_local_review",
+  "date": "2026-09-14",
+  "environment": "Local static handoff served at http://127.0.0.1:4173/index.html; Chrome via Playwright",
+  "tested_fingerprints": {
+    "index.html": "3c5f7c5bebd84558d8c61f5e8d40b9589a0178ea2b8bde8c66a0319a4731a9d8",
+    "review.css": "0a8bf379b12af36cc095141bdfe71c998f1655c05c05279134f00553f1e1360d",
+    "review.js": "8a86e61331f7178c888bc85a85c57f31c386f25a56493197b2c1e518c3406064"
+  },
+  "checks": [
+    {"check": "desktop_document_width", "status": "pass", "viewport": "1440x1000", "document_width": 1440},
+    {"check": "mobile_document_width", "status": "pass", "viewport": "390x844", "document_width": 390},
+    {"check": "page_capture_images", "status": "pass", "detail": "All eight images decoded with nonzero dimensions after scrolling and requesting eager loading in the test browser only."},
+    {"check": "mobile_page_tree", "status": "pass", "detail": "Pages opens the tree, Ecosystem navigates and closes it; aria-expanded follows state. Coverage table scrolls within the mobile page without document overflow."},
+    {"check": "full_size_capture", "status": "pass", "detail": "Modal opens from screenshot link; Escape closes it."},
+    {"check": "copy_view", "status": "pass", "detail": "Copy view applies and reverses; full source/notes view is restored."},
+    {"check": "copy_text", "status": "pass", "detail": "New footer and Ecosystem proof buttons reach the actual Copied state after a bounded asynchronous wait. Other browsers may use the selection fallback."},
+    {"check": "active_page_indicator", "status": "pass", "detail": "Ecosystem correctly highlighted after navigation in this revision."},
+    {"check": "specific_copy_routes", "status": "pass", "detail": "Homepage GlowSens link navigates to the actual story card; Membership has three relevant benefit links; About has both Membership and Programs links."},
+    {"check": "rendered_testimonial_locations", "status": "pass", "detail": "All seven quote elements have the correct containing page: Home T012, Membership T014, Programs T006, Builder 1.0 T002, Events T003, Ecosystem T013, About T001."},
+    {"check": "browser_console", "status": "pass", "detail": "No errors or warnings reported in the final review session."},
+    {"check": "visual_spot_review", "status": "pass", "detail": "Coverage table, actual shared-footer copy, and Ecosystem proof cards inspected on desktop; stacked Ecosystem cards inspected at 390px. Remaining holds are visible rather than presented as completed factual inventories. Not an exhaustive visual certification of every module."}
+  ],
+  "captures": ["qa/desktop.png", "qa/ecosystem.png", "qa/footer.png", "qa/mobile.png"],
+  "limitations": [
+    "The first clipboard assertion ran before its asynchronous handler completed. It was rerun with a bounded wait for the actual Copied state and passed.",
+    "One earlier test waited on lazy images without first requesting them and was stopped; final image checks were rerun successfully with bounded waits.",
+    "Screenshots after deep anchor navigation were recaptured after layout settled; no early transitional capture is used as QA evidence.",
+    "Accessibility checked only for visible structure and tested controls, not full WCAG certification or screen-reader testing.",
+    "Print/PDF, other browser engines, real-device behavior, and deployment were not tested.",
+    "All final booking/application URLs and public-content approval remain pending."
+  ]
+}
