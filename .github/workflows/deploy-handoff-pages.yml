@@ -18,6 +18,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out handoff
+        uses: actions/checkout@v4
       - name: Upload handoff site
         uses: actions/upload-pages-artifact@v3
         with:
